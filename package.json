@@ -1,0 +1,23 @@
+{
+  "name": "json-resume",
+  "version": "0.0.0",
+  "description": "Automatic CV generation from JSON format into HTML and PDF.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alifeee/json-resume.git"
+  },
+  "keywords": [
+    "resume",
+    "cv"
+  ],
+  "author": "Alfred Renn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alifeee/json-resume/issues"
+  },
+  "homepage": "https://github.com/alifeee/json-resume#readme"
+}
