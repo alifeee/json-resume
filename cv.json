@@ -1,0 +1,27 @@
+{
+  "basics": {
+    "name": "Alfred Renn",
+    "label": "Software Engineer",
+    "image": "",
+    "email": "alfredirenn@gmail.com",
+    "phone": "+447475 133 651",
+    "url": "http://alifeee.co.uk",
+    "location": {
+      "city": "Birmingham",
+      "countryCode": "GB",
+      "region": "West Midlands"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "alfredrenn",
+        "url": "https://www.linkedin.com/in/alfredrenn"
+      },
+      {
+        "network": "GitHub",
+        "username": "alifeee",
+        "url": "https://github.com/alifeee"
+      }
+    ]
+  }
+}
