@@ -23,5 +23,33 @@
         "url": "https://github.com/alifeee"
       }
     ]
-  }
+  },
+  "education": [
+    {
+      "institution": "Durham University",
+      "url": "https://www.durham.ac.uk/",
+      "area": "Physics",
+      "studyType": "MPhys",
+      "startDate": "2018-09-01",
+      "endDate": "2022-07-06",
+      "score": "1st (77%)",
+      "courses": [
+        ""
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Florence Nightingale Award for Graphical Excellence",
+      "date": "2019-07-03",
+      "awarder": "Durham University",
+      "summary": "Awarded for the optimal presentation of quantitative data to illustrate a Helmholtz coil. Used Python for graphing."
+    },
+    {
+      "title": "Durham Award for Academic Excellence",
+      "date": "2019-07-03",
+      "awarder": "Durham University",
+      "summary": "Awarded for achieving over 80% in first year of university."
+    }
+  ]
 }
