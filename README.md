@@ -31,3 +31,9 @@ npm run build -- --theme jsonresume-theme-paper
 npm run build -- --theme jsonresume-theme-even
 # ...
 ```
+
+### Run with watch
+
+```bash
+npm run dev -- -- -- --theme jsonresume-theme-eloquent
+```
