@@ -20,3 +20,14 @@ npm install
 ```bash
 npm run test
 ```
+
+### Build HTML
+
+```bash
+npm run build -- --theme jsonresume-theme-elequent
+# or
+npm run build -- --theme jsonresume-theme-paper
+# or
+npm run build -- --theme jsonresume-theme-even
+# ...
+```
