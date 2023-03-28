@@ -24,6 +24,17 @@
       }
     ]
   },
+  "work": [
+    {
+      "name": "ByteSnap Design",
+      "position": "Software Engineer",
+      "url": "https://www.bytesnap.com/",
+      "startDate": "2022-08-22",
+      "endDate": "2023-03-03",
+      "summary": "",
+      "highlights": []
+    }
+  ],
   "education": [
     {
       "institution": "Durham University",
@@ -49,9 +60,9 @@
       "endDate": "2018-07-06",
       "score": "A*AA",
       "courses": [
-        "Physics",
-        "Mathematics",
-        "Further Mathematics"
+        "A* Physics",
+        "A* Mathematics",
+        "A* Further Mathematics"
       ]
     },
     {
@@ -62,10 +73,19 @@
       "endDate": "2016-07-06",
       "score": "6A*, 4A, 2D*",
       "courses": [
-        "Mathematics: A*",
-        "English: A",
-        "+ 10"
+        "A* Mathematics",
+        "A English",
+        "+ 5A*, 3A, 2D*"
       ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "British Heart Foundation",
+      "position": "Electrical Testing Volunteer",
+      "url": "https://www.bhf.org.uk/",
+      "startDate": "2023-03-23",
+      "summary": "Testing electrical equipment for the British Heart Foundation."
     }
   ],
   "awards": [
@@ -80,6 +100,31 @@
       "date": "2019-07-03",
       "awarder": "Durham University",
       "summary": "Awarded for achieving over 80% in first year of university."
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Data Analysis",
+      "keywords": [
+        "Python",
+        "Statistics"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Vue"
+      ]
     }
   ]
 }
