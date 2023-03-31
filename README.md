@@ -21,9 +21,11 @@ npm install
 npm run test
 ```
 
-### Build HTML
+### Build HTML (with theme)
 
 ```bash
+npm run build
+# or
 npm run build -- elequent
 # or
 npm run build -- paper
@@ -32,10 +34,13 @@ npm run build -- even
 # ...
 ```
 
-### Run with watch
+### Run with watch (with theme)
 
 ```bash
+npm run dev
+# or
 npm run dev -- eloquent
+# ...
 ```
 
 ### View HTML

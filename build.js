@@ -1,10 +1,13 @@
 import { readFile, writeFile } from "node:fs/promises";
 
-// get args
-const args = process.argv.slice(2);
-const theme = `jsonresume-theme-${args[0]}`;
+const resume = JSON.parse(await readFile("resume.json", "utf-8"));
 
-// get theme
+// get theme from "node build.js <theme>"
+const args = process.argv.slice(2);
+const argtheme = args[0];
+
+const theme = argtheme ?? resume?.meta?.theme;
+
 let render;
 try {
   const themeModule = await import(theme);
@@ -15,7 +18,5 @@ try {
   process.exit();
 }
 
-const cv = JSON.parse(await readFile("resume.json", "utf-8"));
-
-writeFile("resume.html", render(cv));
+writeFile("resume.html", render(resume));
 console.log(`You can find your rendered resume at resume.html. Nice work! 🚀`);

@@ -126,5 +126,8 @@
         "Vue"
       ]
     }
-  ]
+  ],
+  "meta": {
+    "theme": "jsonresume-theme-eloquent"
+  }
 }
