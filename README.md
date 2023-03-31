@@ -35,5 +35,11 @@ npm run build -- even
 ### Run with watch
 
 ```bash
-npm run dev -- -- -- --theme jsonresume-theme-eloquent
+npm run dev -- eloquent
 ```
+
+### View HTML
+
+Open `resume.html` using the VSCode Live Server extension.
+
+![Context menu for live server in VSCode](images/live%20server.png)

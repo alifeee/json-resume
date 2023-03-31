@@ -7,7 +7,7 @@
   "scripts": {
     "test": "node validate.js",
     "build": "node build.js",
-    "dev": "nodemon --exec npm run build"
+    "dev": "nodemon build.js"
   },
   "repository": {
     "type": "git",
