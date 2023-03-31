@@ -1,7 +1,7 @@
-const fs = require("fs");
-const resumeSchema = require("resume-schema");
+import { readFile, writeFile } from "node:fs/promises";
+import { validate } from "resume-schema";
 
-const resumeObject = JSON.parse(fs.readFileSync("resume.json", "utf8"));
+const resume = JSON.parse(await readFile("resume.json", "utf-8"));
 
 const callback = (err, valid) => {
   if (err) {
@@ -19,4 +19,4 @@ const callback = (err, valid) => {
     console.log("\x1b[32mJSON is valid\x1b[0m");
   }
 };
-resumeSchema.validate(resumeObject, callback);
+validate(resume, callback);
