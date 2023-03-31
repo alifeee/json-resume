@@ -2,10 +2,11 @@
   "name": "json-resume",
   "version": "0.0.0",
   "description": "Automatic CV generation from JSON format into HTML and PDF.",
-  "main": "index.js",
+  "main": "build.js",
+  "type": "module",
   "scripts": {
     "test": "node validate.js",
-    "build": "resumed render",
+    "build": "node build.js",
     "dev": "nodemon --exec npm run build"
   },
   "repository": {

@@ -24,11 +24,11 @@ npm run test
 ### Build HTML
 
 ```bash
-npm run build -- --theme jsonresume-theme-elequent
+npm run build -- elequent
 # or
-npm run build -- --theme jsonresume-theme-paper
+npm run build -- paper
 # or
-npm run build -- --theme jsonresume-theme-even
+npm run build -- even
 # ...
 ```
 
