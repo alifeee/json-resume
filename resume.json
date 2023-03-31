@@ -102,15 +102,10 @@
       "summary": "Awarded for achieving over 80% in first year of university."
     }
   ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
   "skills": [
     {
       "name": "Data Analysis",
+      "level": "",
       "keywords": [
         "Python",
         "Statistics"
@@ -125,6 +120,34 @@
         "JavaScript",
         "Vue"
       ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Board games",
+      "keywords": [
+        "Founding president of Board Gaming Society at Sixth Form"
+      ]
+    },
+    {
+      "name": "Electronics",
+      "keywords": [
+        "Arduino (microcontroller and circuit board building)",
+        "PC building"
+      ]
+    },
+    {
+      "name": "National Citizenship Service",
+      "keywords": [
+        "Outdoor activities as a team including orienteering",
+        "Organisation of charity fundraiser and litter pick as a group of young people"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
     }
   ],
   "meta": {
