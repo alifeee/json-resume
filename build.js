@@ -1,3 +1,5 @@
+// loads resume.json. renders it using the render function from the theme. theme is specified in the meta section of the resume.json or as an argument to the build script.
+// https://jsonresume.org/
 import { readFile, writeFile } from "node:fs/promises";
 
 const resume = JSON.parse(await readFile("resume.json", "utf-8"));

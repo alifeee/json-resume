@@ -1,3 +1,4 @@
+// Validates the resume.json file against the schema (https://jsonresume.org/schema/)
 import { readFile, writeFile } from "node:fs/promises";
 import { validate } from "resume-schema";
 
