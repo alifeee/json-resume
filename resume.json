@@ -111,6 +111,18 @@
       "startDate": "2023-03-23",
       "summary": "Testing electrical equipment for the British Heart Foundation home shop",
       "highlights": []
+    },
+    {
+      "organization": "National Citizen Service",
+      "position": "National Citizen Service",
+      "url": "https://www.ncsyes.co.uk/",
+      "startDate": "2016-06-01",
+      "endDate": "2016-07-01",
+      "summary": "",
+      "highlights": [
+        "Outdoor activities as a team including orienteering",
+        "Organisation of charity fundraiser and litter pick as a group of young people"
+      ]
     }
   ],
   "education": [
@@ -213,13 +225,6 @@
       "keywords": [
         "Arduino (microcontroller and circuit board building)",
         "PC building"
-      ]
-    },
-    {
-      "name": "National Citizenship Service",
-      "keywords": [
-        "Outdoor activities as a team including orienteering",
-        "Organisation of charity fundraiser and litter pick as a group of young people"
       ]
     }
   ],
