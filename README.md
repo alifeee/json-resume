@@ -57,9 +57,16 @@ The easiest way to experiment with themes is to update the resume gist (push to 
 https://registry.jsonresume.org/alifeee?theme=even
 ```
 
-A list of themes can be found at [https://jsonresume.org/themes/](https://jsonresume.org/themes/). A lot of these are broken. Some promising looking themes are:
+A list of themes can be found at [https://jsonresume.org/themes/](https://jsonresume.org/themes/). A lot of these are broken. Some promising looking themes (look nice, work well on mobile) are:
 
-- [Elegant](https://registry.jsonresume.org/alifeee?theme=elegant)
+- [Even](https://github.com/rbardini/jsonresume-theme-even) ²
+- [Kendall](https://github.com/linuxbozo/jsonresume-theme-kendall)
+- [Paper](https://github.com/TimDaub/jsonresume-theme-paper) ²
+- [Eloquent](https://github.com/thibaudcolas/jsonresume-theme-eloquent) ²
+- [Elegant](https://registry.jsonresume.org/alifeee?theme=elegant) (not installed as very outdated and full of npm vulnerabilities)
+- [OnePage](https://github.com/ainsleyc/jsonresume-theme-onepage) (not installed as very outdated and full of npm vulnerabilities)
+
+² - these do not work on `registry.jsonresume.org`
 
 ### Local
 

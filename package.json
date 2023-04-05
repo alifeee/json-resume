@@ -26,6 +26,7 @@
   "dependencies": {
     "jsonresume-theme-eloquent": "^4.1.0",
     "jsonresume-theme-even": "^0.18.1",
+    "jsonresume-theme-kendall": "^0.2.0",
     "jsonresume-theme-paper": "^0.5.0",
     "resume-schema": "^1.0.0",
     "resumed": "^3.0.1"
