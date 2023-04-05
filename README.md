@@ -47,8 +47,36 @@ Open `resume.html` using the VSCode Live Server extension.
 
 ![Context menu for live server in VSCode](images/live%20server.png)
 
-## Recommended themes
+## Themes
 
-### [jsonresume-theme-even](https://github.com/rbardini/jsonresume-theme-even)
+### Remote
 
-![Screenshot of even theme](images/jsonresume-theme-even.png)
+The easiest way to experiment with themes is to update the resume gist (push to main) and visit the [JSON resume registry](https://registry.jsonresume.org/alifeee). The theme can be changed via the `theme` query parameter, e.g.:
+
+```url
+https://registry.jsonresume.org/alifeee?theme=even
+```
+
+A list of themes can be found at [https://jsonresume.org/themes/](https://jsonresume.org/themes/). A lot of these are broken. Some promising looking themes are:
+
+- [Elegant](https://registry.jsonresume.org/alifeee?theme=elegant)
+
+### Local
+
+Alternatively, the theme can be changed locally by installing the theme
+
+```bash
+npm install --save jsonresume-theme-even
+```
+
+and then running the build command with the theme name
+
+```bash
+npm run build -- even
+```
+
+or updating `meta.theme` to the new theme in `resume.json` and running the build command
+
+```bash
+npm run build
+```
