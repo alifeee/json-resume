@@ -4,6 +4,8 @@ My CV in JSON format based on <https://jsonresume.org/>.
 
 ## [View resume on-line](https://registry.jsonresume.org/alifeee)
 
+![Preview of resume on-line](images/resume_preview.png)
+
 ## Development
 
 ### Prerequisites
