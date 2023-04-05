@@ -26,7 +26,7 @@ npm run test
 ```bash
 npm run build
 # or
-npm run build -- elequent
+npm run build -- eloquent
 # or
 npm run build -- paper
 # or
