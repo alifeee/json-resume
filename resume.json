@@ -4,9 +4,12 @@
     "label": "Software Engineer",
     "image": "",
     "email": "alfredirenn@gmail.com",
-    "phone": "+447475 133 651",
+    "phone": "",
     "url": "http://alifeee.co.uk",
+    "summary": "",
     "location": {
+      "address": "",
+      "postalCode": "",
       "city": "Birmingham",
       "countryCode": "GB",
       "region": "West Midlands"
@@ -100,6 +103,17 @@
       ]
     }
   ],
+  "volunteer": [
+    {
+      "organization": "British Heart Foundation",
+      "position": "Electrical Tester",
+      "url": "https://www.bhf.org.uk/",
+      "startDate": "2023-03-23",
+      "endDate": "",
+      "summary": "Testing electrical equipment for the British Heart Foundation home shop",
+      "highlights": []
+    }
+  ],
   "education": [
     {
       "institution": "Durham University",
@@ -120,10 +134,11 @@
     {
       "institution": "Cottingham High School and Sixth Form College",
       "url": "https://www.cottinghamhigh.net/",
+      "area": "Physics, Mathematics, Further Mathematics",
       "studyType": "A Level",
       "startDate": "2016-09-01",
       "endDate": "2018-07-06",
-      "score": "A*AA",
+      "score": "A*A*A*",
       "courses": [
         "A* Physics",
         "A* Mathematics",
@@ -133,6 +148,7 @@
     {
       "institution": "Cottingham High School and Sixth Form College",
       "url": "https://www.cottinghamhigh.net/",
+      "area": "",
       "studyType": "GCSE",
       "startDate": "2011-09-01",
       "endDate": "2016-07-06",
@@ -142,15 +158,6 @@
         "A English",
         "+ 5A*, 3A, 2D*"
       ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "British Heart Foundation",
-      "position": "Electrical Testing Volunteer",
-      "url": "https://www.bhf.org.uk/",
-      "startDate": "2023-03-23",
-      "summary": "Testing electrical equipment for the British Heart Foundation."
     }
   ],
   "awards": [
@@ -167,6 +174,8 @@
       "summary": "Awarded for achieving over 80% in first year of university."
     }
   ],
+  "certificates": [],
+  "publications": [],
   "skills": [
     {
       "name": "Data Analysis",
@@ -185,6 +194,12 @@
         "JavaScript",
         "Vue"
       ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
     }
   ],
   "interests": [
@@ -209,13 +224,156 @@
       ]
     }
   ],
-  "languages": [
+  "references": [
     {
-      "language": "English",
-      "fluency": "Native speaker"
+      "name": "Jim Mayock, Viper RF",
+      "reference": "Available on request"
+    },
+    {
+      "name": "Dr. Ifan Hughes, Durham University",
+      "reference": "Available on request"
+    },
+    {
+      "name": "Graeme Wintle, ByteSnap Design",
+      "reference": "Available on request"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Custom racing wheel",
+      "description": "Used Arduino to create a steering wheel for driving games, improving practical knowledge of electronics and coding skills, and evolving a robust toolset for microcontroller development",
+      "highlights": [],
+      "keywords": [
+        "Arduino",
+        "Electronics",
+        "C",
+        "DIY"
+      ],
+      "startDate": "2017",
+      "endDate": "2017",
+      "url": "",
+      "roles": [
+        "Creator"
+      ],
+      "entity": "Home",
+      "type": "Hardware"
+    },
+    {
+      "name": "Real-time power optimisation for a satellite thruster",
+      "description": "Used a microcontroller to minimise power losses for a microwave generator, to be used in space satellites, improving industry knowledge and personal skills",
+      "highlights": [],
+      "keywords": [
+        "C",
+        "Electronics"
+      ],
+      "startDate": "2019-08-12",
+      "endDate": "2019-09-20",
+      "url": "",
+      "roles": [
+        "Creator",
+        "Tester"
+      ],
+      "entity": "Viper RF",
+      "type": "Hardware"
+    },
+    {
+      "name": "Optical rotation research project",
+      "description": "Investigated the phenomenon of optical rotation when light is shone through sugar solutions, including potential uses in science and industry, culminating in a 5-page scientific report",
+      "highlights": [],
+      "keywords": [
+        "Physics",
+        "Research",
+        "Optics"
+      ],
+      "startDate": "2020-01-10",
+      "endDate": "2020-03-30",
+      "url": "",
+      "roles": [
+        "Student",
+        "Researcher"
+      ],
+      "entity": "Durham University",
+      "type": "Research"
+    },
+    {
+      "name": "Personal website",
+      "description": "Used free time over summer to learn HTML/CSS/JavaScript to create a versatile website with physics simulations, games, and a collation of many physics resources for fellow Durham students",
+      "highlights": [],
+      "keywords": [
+        "Web Development",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "startDate": "2020-04-01",
+      "endDate": "",
+      "url": "https://www.alifeee.co.uk",
+      "roles": [
+        "Creator",
+        "Maintainer"
+      ],
+      "entity": "Home",
+      "type": "Web Development"
+    },
+    {
+      "name": "Quantum mechanics simulation",
+      "description": "Simulated a finite square well with Python to create a learning resource for physics students, requiring data manipulation and creative problem solving to get a responsive application",
+      "highlights": [],
+      "keywords": [
+        "Python",
+        "Physics",
+        "Teaching"
+      ],
+      "startDate": "2020-08-31",
+      "endDate": "2020-10-02",
+      "url": "",
+      "roles": [
+        "Creator",
+        "Tester"
+      ],
+      "entity": "Durham University",
+      "type": "Software"
+    },
+    {
+      "name": "Atomic-force microscopy",
+      "description": "Imaged surfaces on the μm- and nm-scale to investigate the effect of carbon micro-particle size on the surface structure of glass, culminating in a 10-page scientific report",
+      "highlights": [],
+      "keywords": [
+        "Physics",
+        "Research",
+        "Optics"
+      ],
+      "startDate": "2020-10-27",
+      "endDate": "2021-04-15",
+      "url": "",
+      "roles": [
+        "Student",
+        "Researcher"
+      ],
+      "entity": "Durham University",
+      "type": "Research"
+    },
+    {
+      "name": "Machine learning for optimising laser cooling experiments",
+      "description": "Used machine learning to optimise the cooling of atoms in a laser trap, culminating in a 33-page scientific report",
+      "highlights": [],
+      "keywords": [
+        "Physics",
+        "Atomic physics",
+        "Machine Learning"
+      ],
+      "startDate": "2021-08-01",
+      "endDate": "2022-04-19",
+      "url": "",
+      "roles": [
+        "Student",
+        "Researcher"
+      ],
+      "entity": "Durham University",
+      "type": "Research"
     }
   ],
   "meta": {
-    "theme": "jsonresume-theme-even"
+    "theme": "jsonresume-theme-eloquent"
   }
 }
