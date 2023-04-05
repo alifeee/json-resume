@@ -7,7 +7,7 @@ const args = process.argv.slice(2);
 const environmentTheme = args[0];
 
 // get theme from resume.json
-const resumeTheme = resume?.meta?.theme;
+const resumeTheme = `jsonresume-theme-${resume.meta?.theme}`;
 
 const theme = environmentTheme ?? resumeTheme;
 if (!theme) {
