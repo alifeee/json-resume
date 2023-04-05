@@ -1,13 +1,17 @@
 # JSON Resume
 
-My CV in JSON format using <https://jsonresume.org/>
+My CV in JSON format based on <https://jsonresume.org/>.
 
-## Requirements
+## [View resume on-line](https://registry.jsonresume.org/alifeee)
 
-- Node.js
-- npm
+## Development
 
-## Commands
+### Prerequisites
+
+| Requirement | Version |
+| ----------- | ------- |
+| Node        | 19.8.1  |
+| npm         | 9.5.1   |
 
 ### Install dependencies
 
@@ -87,3 +91,10 @@ or updating `meta.theme` to the new theme in `resume.json` and running the build
 ```bash
 npm run build
 ```
+
+## GitHub Actions
+
+| Action | File | Description |
+| ------ | ---- | ----------- |
+| `Node.js CI` | `.github/workflows/node.js.yml` | Runs `npm test` on push to main. |
+| `GitHub Gist updater` | `.github/workflows/gist.yml` | Updates the [resume gist](https://gist.github.com/alifeee/97f9ac1642b1c46cf66942c3f079a42f) on push to main, so that the [JSON resume preview](https://registry.jsonresume.org/alifeee) stays updated. |
