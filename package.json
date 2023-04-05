@@ -1,7 +1,7 @@
 {
   "name": "json-resume",
   "version": "0.0.0",
-  "description": "Automatic CV generation from JSON format into HTML and PDF.",
+  "description": "Automatic CV generation from JSON format into HTML using JSONResume",
   "main": "build.js",
   "type": "module",
   "scripts": {
