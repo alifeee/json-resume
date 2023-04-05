@@ -26,11 +26,9 @@ npm run test
 ```bash
 npm run build
 # or
-npm run build -- eloquent
+npm run build -- even
 # or
 npm run build -- paper
-# or
-npm run build -- even
 # ...
 ```
 
@@ -39,7 +37,7 @@ npm run build -- even
 ```bash
 npm run dev
 # or
-npm run dev -- eloquent
+npm run dev -- even
 # ...
 ```
 
@@ -48,3 +46,9 @@ npm run dev -- eloquent
 Open `resume.html` using the VSCode Live Server extension.
 
 ![Context menu for live server in VSCode](images/live%20server.png)
+
+## Recommended themes
+
+### [jsonresume-theme-even](https://github.com/rbardini/jsonresume-theme-even)
+
+![Screenshot of even theme](images/jsonresume-theme-even.png)
