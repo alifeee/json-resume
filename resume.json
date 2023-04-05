@@ -30,6 +30,7 @@
   "work": [
     {
       "name": "ByteSnap Design",
+      "company": "ByteSnap Design",
       "position": "Software Engineer",
       "url": "https://www.bytesnap.com/",
       "startDate": "2022-08-22",
@@ -39,6 +40,7 @@
     },
     {
       "name": "Durham University Physics Department",
+      "company": "Durham University Physics Department",
       "position": "Solar Physics Research Student",
       "url": "https://www.dur.ac.uk/qlm/",
       "startDate": "2021-06-14",
@@ -52,6 +54,7 @@
     },
     {
       "name": "Durham University Physics Department",
+      "company": "Durham University Physics Department",
       "position": "Content Developer",
       "url": "https://www.durham.ac.uk/departments/academic/physics/",
       "startDate": "2020-08-31",
@@ -65,6 +68,7 @@
     },
     {
       "name": "Viper RF",
+      "company": "Viper RF",
       "position": "Design Engineer (Internship)",
       "url": "https://www.viper-rf.com/",
       "startDate": "2019-08-12",
@@ -79,6 +83,7 @@
     },
     {
       "name": "CRODA",
+      "company": "CRODA",
       "position": "Chemical Engineering Maintenance Technician (Work Experience)",
       "url": "https://www.croda.com/",
       "startDate": "2017-06-19",
@@ -93,6 +98,7 @@
     },
     {
       "name": "New Village News",
+      "company": "New Village News",
       "position": "Paper Boy",
       "startDate": "2014-06-01",
       "endDate": "2017-06-01",
