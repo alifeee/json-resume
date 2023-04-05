@@ -33,6 +33,71 @@
       "endDate": "2023-03-03",
       "summary": "",
       "highlights": []
+    },
+    {
+      "name": "Durham University Physics Department",
+      "position": "Solar Physics Research Student",
+      "url": "https://www.dur.ac.uk/qlm/",
+      "startDate": "2021-06-14",
+      "endDate": "2021-08-13",
+      "summary": "Researching novel telescope imaging techniques using quantum gases",
+      "highlights": [
+        "Developed robust code with python for fabricating and analysing images from a solar telescope",
+        "Performed deep literature review to justify techniques used in the creation of said telescope",
+        "Discussed and acted upon desires and needs of telescope engineers, theorists, and observationalists"
+      ]
+    },
+    {
+      "name": "Durham University Physics Department",
+      "position": "Content Developer",
+      "url": "https://www.durham.ac.uk/departments/academic/physics/",
+      "startDate": "2020-08-31",
+      "endDate": "2020-10-02",
+      "summary": "Developing interactive teaching content for a better online learning experience in the pandemic",
+      "highlights": [
+        "Utilised python to create highly interactive learning resources for Durham physics students",
+        "Worked remotely with lecturers to deliver content tailored to their needs and desires",
+        "Organised fellow interns as a group by creating task rotas to encourage teamwork and mitigate work-duplication, establishing efficient development"
+      ]
+    },
+    {
+      "name": "Viper RF",
+      "position": "Design Engineer (Internship)",
+      "url": "https://www.viper-rf.com/",
+      "startDate": "2019-08-12",
+      "endDate": "2019-09-20",
+      "summary": "Designing and testing real-time optimisation for an ion satellite thruster",
+      "highlights": [
+        "Programmed and debugged a real-time optimisation algorithm on a microcontroller with C",
+        "Provided R&D updates and creative input to problem solving",
+        "Worked on commercially sensitive and highly confidential new product developments using advanced software",
+        "Liaised directly with customers on work done with radio-frequency electronics"
+      ]
+    },
+    {
+      "name": "CRODA",
+      "position": "Chemical Engineering Maintenance Technician (Work Experience)",
+      "url": "https://www.croda.com/",
+      "startDate": "2017-06-19",
+      "endDate": "2017-06-23",
+      "summary": "Maintenance of chemical engineering equipment",
+      "highlights": [
+        "Shadowed engineering, maintenance, and instrumentation teams at a chemical-production facility",
+        "Designed hanging basket using TIG welder, requiring fast learning of techniques",
+        "Worked alongside diverse teams with a professional conduct",
+        "Gained an awareness of health and safety, commercial awareness, value for money, and customer service"
+      ]
+    },
+    {
+      "name": "New Village News",
+      "position": "Paper Boy",
+      "startDate": "2014-06-01",
+      "endDate": "2017-06-01",
+      "summary": "Delivering newspapers to local residents as a subscription service",
+      "highlights": [
+        "Demonstrated reliability and excellent timekeeping on my weekly morning paper round",
+        "Undertook additional responsibilities as required covering people's rounds last minute when needed"
+      ]
     }
   ],
   "education": [
