@@ -2,11 +2,21 @@ import { readFile, writeFile } from "node:fs/promises";
 
 const resume = JSON.parse(await readFile("resume.json", "utf-8"));
 
-// get theme from "node build.js <theme>"
+// get environment theme from "node build.js <theme>"
 const args = process.argv.slice(2);
-const argtheme = args[0];
+const environmentTheme = args[0];
 
-const theme = argtheme ?? resume?.meta?.theme;
+// get theme from resume.json
+const resumeTheme = resume?.meta?.theme;
+
+const theme = environmentTheme ?? resumeTheme;
+if (!theme) {
+  console.error(
+    "You must specify a theme in the meta section of your resume.json or as an argument to the build script."
+  );
+  process.exitCode = 1;
+  process.exit();
+}
 
 let render;
 try {
