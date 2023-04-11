@@ -2,9 +2,14 @@ name: GitHub Gist updater
 
 on:
   push:
+    paths:
+      - "resume.json"
     branches: [ "main" ]
   pull_request:
+    paths:
+      - "resume.json"
     branches: [ "main" ]
+
 
 jobs:
   update-gist:
