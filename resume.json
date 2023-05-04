@@ -35,8 +35,13 @@
       "url": "https://www.bytesnap.com/",
       "startDate": "2022-08-22",
       "endDate": "2023-03-03",
-      "summary": "Engineering desktop and web apps to increase internal productivity and creating bespoke web apps for clients",
-      "highlights": ["Vue", "Flutter", "WPF", "Effective Deployment"]
+      "summary": "Designed, developed, and engineered various web applications for both internal and customer projects, utilizing a range of programming languages and frameworks to build powerful software solutions.",
+      "highlights": [
+        "Utilised <b>Vue</b> and <b>TypeScript</b> to create an intuitive, user-friendly web application, using robust design patterns and best practices to ensure optimal functionality and user experience",
+        "Designed and developed a responsive, feature-rich web application using <b>Flutter</b> and <b>Dart</b>, incorporating a range of views and user-friendly interfaces for maximum ease of use",
+        "Employed <b>WPF</b> and <b>C#</b> to create a high-performance application, using <b>SQL</b> and an MVC architecture to facilitate the viewing, manipulation, and analysis of data",
+        "Streamlined the deployment process of complex code with multiple dependencies, using <b>Docker</b> and <b>GitLab</b> CI to optimise the development process and improve productivity"
+      ]
     },
     {
       "name": "Durham University Physics Department",
