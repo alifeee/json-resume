@@ -47,7 +47,7 @@
       "endDate": "2021-08-13",
       "summary": "Researching novel telescope imaging techniques using quantum gases",
       "highlights": [
-        "Developed robust code with python for fabricating and analysing images from a solar telescope",
+        "Developed robust code with <b>Python</b> for fabricating and analysing images from a solar telescope",
         "Performed deep literature review to justify techniques used in the creation of said telescope",
         "Discussed and acted upon desires and needs of telescope engineers, theorists, and observationalists"
       ]
@@ -61,7 +61,7 @@
       "endDate": "2020-10-02",
       "summary": "Developing interactive teaching content for a better online learning experience in the pandemic",
       "highlights": [
-        "Utilised python to create highly interactive learning resources for Durham physics students",
+        "Utilised <b>Python</b> to create highly interactive learning resources for Durham physics students",
         "Worked remotely with lecturers to deliver content tailored to their needs and desires",
         "Organised fellow interns as a group by creating task rotas to encourage teamwork and mitigate work-duplication, establishing efficient development"
       ]
@@ -75,7 +75,7 @@
       "endDate": "2019-09-20",
       "summary": "Designing and testing real-time optimisation for an ion satellite thruster",
       "highlights": [
-        "Programmed and debugged a real-time optimisation algorithm on a microcontroller with C",
+        "Programmed and debugged a real-time optimisation algorithm on a microcontroller with <b>C</b>",
         "Provided R&D updates and creative input to problem solving",
         "Worked on commercially sensitive and highly confidential new product developments using advanced software",
         "Liaised directly with customers on work done with radio-frequency electronics"
@@ -174,7 +174,7 @@
       "title": "Florence Nightingale Award for Graphical Excellence",
       "date": "2019-07-03",
       "awarder": "Durham University",
-      "summary": "Awarded for the optimal presentation of quantitative data to illustrate a Helmholtz coil. Used Python for graphing."
+      "summary": "Awarded for the optimal presentation of quantitative data to illustrate a Helmholtz coil. Used <b>Python</b> for graphing."
     },
     {
       "title": "Durham Award for Academic Excellence",
