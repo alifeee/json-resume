@@ -35,8 +35,8 @@
       "url": "https://www.bytesnap.com/",
       "startDate": "2022-08-22",
       "endDate": "2023-03-03",
-      "summary": "",
-      "highlights": []
+      "summary": "Engineering desktop and web apps to increase internal productivity and creating bespoke web apps for clients",
+      "highlights": ["Vue", "Flutter", "WPF", "Effective Deployment"]
     },
     {
       "name": "Durham University Physics Department",
