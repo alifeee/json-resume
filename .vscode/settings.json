@@ -12,5 +12,6 @@
     "Renn",
     "Wintle"
   ],
-  "cSpell.language": "en-GB"
+  "cSpell.language": "en-GB",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 }

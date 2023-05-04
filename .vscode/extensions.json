@@ -1,3 +1,6 @@
 {
-  "recommendations": ["zainchen.json", "streetsidesoftware.code-spell-checker"]
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker"
+  ]
 }
