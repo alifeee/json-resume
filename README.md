@@ -2,9 +2,9 @@
 
 My CV in JSON format based on <https://jsonresume.org/>.
 
-## [View resume on-line](https://registry.jsonresume.org/alifeee)
+## [View resume online](https://registry.jsonresume.org/alifeee)
 
-![Preview of resume on-line](images/resume_preview.png)
+![Preview of resume online](images/resume_preview.png)
 
 ## Development
 
