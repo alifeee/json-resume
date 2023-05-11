@@ -100,3 +100,11 @@ npm run build
 | ------ | ---- | ----------- |
 | `Node.js CI` | `.github/workflows/node.js.yml` | Runs `npm test` on push to main. |
 | `GitHub Gist updater` | `.github/workflows/gist.yml` | Updates the [resume gist](https://gist.github.com/alifeee/97f9ac1642b1c46cf66942c3f079a42f) on push to main, so that the [JSON resume preview](https://registry.jsonresume.org/alifeee) stays updated. |
+
+## Custom theme
+
+You can fork a theme's GitHub and [use npm to install from GitHub](https://stackoverflow.com/questions/13300137/how-to-edit-a-node-module-installed-via-npm).
+
+```bash
+npm install https://github.com/<username>/<repository>/tarball/<branch>
+```

@@ -14,5 +14,8 @@
   ],
   "cSpell.language": "en-GB",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "liveServer.settings.wait": 600
+  "liveServer.settings.wait": 600,
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  }
 }
