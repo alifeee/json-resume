@@ -16,6 +16,10 @@
     },
     "profiles": [
       {
+        "network": "Blog",
+        "url": "https://blog.alifeee.co.uk"
+      },
+      {
         "network": "LinkedIn",
         "username": "alfredrenn",
         "url": "https://www.linkedin.com/in/alfredrenn"
