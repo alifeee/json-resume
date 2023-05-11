@@ -4,24 +4,18 @@ on:
   push:
     paths:
       - "resume.json"
-    branches: [ "main" ]
-  pull_request:
-    paths:
-      - "resume.json"
-    branches: [ "main" ]
-
+    branches: ["main"]
 
 jobs:
   update-gist:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Deploy
-      uses: exuanbo/actions-deploy-gist@v1
-      with:
-        token: ${{ secrets.GIST_TOKEN }}
-        gist_id: ${{ secrets.GIST_ID }}
-        file_path: resume.json
-        file_type: json
+      - uses: actions/checkout@v3
+      - name: Deploy
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_TOKEN }}
+          gist_id: ${{ secrets.GIST_ID }}
+          file_path: resume.json
+          file_type: json
