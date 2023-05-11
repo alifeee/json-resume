@@ -1,0 +1,62 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Node.js CI
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+      - name: Test
+        run: npm test
+      - name: Build html
+        run: npm run build-html
+      - name: Build pdf
+        run: npm run build-pdf
+
+      - name: Save html artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: html resume
+          path: resume.html
+      - name: Save pdf artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: pdf resume
+          path: resume.pdf
+      - name: Upload html to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: resume.html
+          asset_name: resume.html
+          tag: ${{ github.ref }}
+          overwrite: true
+          body: html resume
+      - name: Upload pdf to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: resume.pdf
+          asset_name: resume.pdf
+          tag: ${{ github.ref }}
+          overwrite: true
+          body: pdf resume

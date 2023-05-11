@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "node validate.js",
-    "build": "node build.js",
+    "build-html": "node build.js",
+    "build-pdf": "npm run build-html && node print.js",
     "dev": "nodemon build.js"
   },
   "repository": {
@@ -28,6 +29,7 @@
     "jsonresume-theme-even": "^0.18.1",
     "jsonresume-theme-kendall": "^0.2.0",
     "jsonresume-theme-paper": "^0.5.0",
+    "puppeteer": "^20.2.0",
     "resume-schema": "^1.0.0"
   },
   "devDependencies": {

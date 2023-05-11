@@ -31,4 +31,4 @@ try {
 }
 
 writeFile("resume.html", render(resume));
-console.log(`You can find your rendered resume at resume.html. Nice work! 🚀`);
+console.log(`You can find your HTML resume at resume.html. Nice work! 🚀`);
