@@ -47,7 +47,7 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: resume.html
-          asset_name: html resume
+          asset_name: resume.html
           tag: ${{ github.ref }}
           overwrite: true
           body: html resume
@@ -56,7 +56,7 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: resume.pdf
-          asset_name: pdf resume
+          asset_name: resume.pdf
           tag: ${{ github.ref }}
           overwrite: true
           body: pdf resume
