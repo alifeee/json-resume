@@ -5,10 +5,11 @@ name: Node.js CI
 
 on:
   push:
-    tags: ["*"]
+    tags:
+      - "*"
 
 jobs:
-  test:
+  build-and-publish:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,10 +19,16 @@ jobs:
         with:
           node-version: 18.x
           cache: "npm"
-      - run: npm ci
-      - run: npm test
-      - run: npm run build-html
-      - run: npm run build-pdf
+
+      - name: Install dependencies
+        run: npm ci
+      - name: Test
+        run: npm test
+      - name: Build html
+        run: npm run build-html
+      - name: Build pdf
+        run: npm run build-pdf
+
       - name: Save html artifact
         uses: actions/upload-artifact@v3
         with:
@@ -32,3 +39,21 @@ jobs:
         with:
           name: pdf resume
           path: resume.pdf
+      - name: Upload html to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: resume.html
+          asset_name: html resume
+          tag: ${{ github.ref }}
+          overwrite: true
+          body: html resume
+      - name: Upload pdf to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: resume.pdf
+          asset_name: pdf resume
+          tag: ${{ github.ref }}
+          overwrite: true
+          body: pdf resume
