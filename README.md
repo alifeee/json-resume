@@ -30,11 +30,11 @@ npm run test
 ### Build HTML (with theme)
 
 ```bash
-npm run build
+npm run build-html
 # or
-npm run build -- even
+npm run build-html -- even
 # or
-npm run build -- paper
+npm run build-html -- paper
 # ...
 ```
 
@@ -52,6 +52,12 @@ npm run dev -- even
 Open `resume.html` using the VSCode Live Server extension.
 
 ![Context menu for live server in VSCode](images/live%20server.png)
+
+### Build PDF
+
+```bash
+npm run build-pdf
+```
 
 ## Themes
 
@@ -85,13 +91,13 @@ npm install --save jsonresume-theme-even
 and then running the build command with the theme name
 
 ```bash
-npm run build -- even
+npm run build-html -- even
 ```
 
 or updating `meta.theme` to the new theme in `resume.json` and running the build command
 
 ```bash
-npm run build
+npm run build-html
 ```
 
 ## GitHub Actions
