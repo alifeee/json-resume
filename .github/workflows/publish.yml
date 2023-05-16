@@ -1,8 +1,7 @@
 # this workflow builds the resume,
-#  and uploads it to the GitHub release that triggered the job
-#  and replaces the `index.html` file in the `cv` repository
-#    (CV_REPO_TOKEN must be set in the secrets of this repository)
-name: build resume and publish to GitHub release, github pages site, and gist
+#  uploads it to the GitHub release that triggered the job
+#  and uploads built files to the publish branch, where they are served by GitHub pages
+name: build resume and publish to GitHub release, github pages site
 
 on:
   push:
@@ -103,16 +102,3 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Update resume to ${{ github.ref_name }}"
-
-  publish-to-gist:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Push json to gist
-        uses: exuanbo/actions-deploy-gist@v1
-        with:
-          token: ${{ secrets.GIST_TOKEN }}
-          gist_id: ${{ secrets.GIST_ID }}
-          file_path: resume.json
-          file_type: json

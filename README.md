@@ -100,7 +100,8 @@ See [the files themselves](.github/workflows) for more details.
 | Action | Description |
 | ------ | ----------- |
 | [`test.yml`] | Runs on pull request and push to `main`. Verifies that the `resume.json` conforms to the [json-resume schema] |
-| [`publish.yml`] | Runs on release (or tag). Builds the HTML and PDF, then pushes to: [releases page]; `publish` branch (viewable on [my GitHub pages]); and [resume gist]. |
+| [`publish.yml`] | Runs on release (or tag). Builds the HTML and PDF, then pushes to: [releases page]; and `publish` branch (viewable on [my GitHub pages]). |
+| [`update-gist.yml`] | Runs on release (or tag). Updates the [resume gist] if `resume.json` has changed. |
 
 [`test.yml`]: .github/workflows/test.yml
 [json-resume schema]: https://jsonresume.org/schema/
