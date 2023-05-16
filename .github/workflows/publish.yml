@@ -99,11 +99,13 @@ jobs:
 
       - name: Rename html resume
         run: mv resume.html index.html
+      - name: Rename pdf resume
+        run: mv resume.pdf Alfred-Renn-CV-${{ github.ref_name }}.pdf
 
       - name: Commit and push changes
         uses: EndBug/add-and-commit@v9
         with:
-          add: '["index.html", "resume.pdf"]'
+          add: '["index.html", "Alfred-Renn-CV-${{ github.ref_name }}.pdf"]'
           author_name: "GitHub Actions"
           author_email: "actions@github.com"
           message: "Update online resume to ${{ github.ref_name }}"
