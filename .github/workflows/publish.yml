@@ -97,10 +97,13 @@ jobs:
           name: pdf resume
           path: resume.pdf
 
+      - name: Rename html resume
+        run: mv resume.html index.html
+
       - name: Commit and push changes
         uses: EndBug/add-and-commit@v9
         with:
-          add: '["resume.html", "resume.pdf"]'
+          add: '["index.html", "resume.pdf"]'
           author_name: "GitHub Actions"
           author_email: "actions@github.com"
           message: "Update online resume to ${{ github.ref_name }}"
