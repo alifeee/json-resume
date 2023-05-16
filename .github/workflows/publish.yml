@@ -2,7 +2,7 @@
 #  and uploads it to the GitHub release that triggered the job
 #  and replaces the `index.html` file in the `cv` repository
 #    (CV_REPO_TOKEN must be set in the secrets of this repository)
-name: build resume and publish to GitHub release
+name: build resume and publish to GitHub release, github pages site, and gist
 
 on:
   push:
@@ -12,10 +12,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js 18.x
@@ -44,13 +40,12 @@ jobs:
           name: pdf resume
           path: resume.pdf
 
-  publish-to-release:
+  publish-release-files:
     needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
       - name: Download html artifact
         uses: actions/download-artifact@v2
         with:
@@ -79,7 +74,7 @@ jobs:
           overwrite: true
           body: pdf resume
 
-  publish-to-cv-repo:
+  publish-to-gh-pages-branch:
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -108,3 +103,16 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Update resume to ${{ github.ref_name }}"
+
+  publish-to-gist:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Push json to gist
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_TOKEN }}
+          gist_id: ${{ secrets.GIST_ID }}
+          file_path: resume.json
+          file_type: json
