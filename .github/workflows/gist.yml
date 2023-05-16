@@ -1,4 +1,6 @@
-name: GitHub Gist updater
+# this workflow updates my `resume.json` github gist every time I push a new `resume.json` to the `main` branch
+# https://gist.github.com/alifeee/97f9ac1642b1c46cf66942c3f079a42f
+name: update GitHub Gist
 
 on:
   push:
@@ -12,7 +14,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Deploy
+      - name: Deploy to gist
         uses: exuanbo/actions-deploy-gist@v1
         with:
           token: ${{ secrets.GIST_TOKEN }}

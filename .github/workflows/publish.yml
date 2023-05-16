@@ -1,0 +1,109 @@
+# this workflow builds the resume,
+#  and uploads it to the GitHub release that triggered the job
+#  and replaces the `index.html` file in the `cv` repository
+#    (CV_REPO_TOKEN must be set in the secrets of this repository)
+name: build resume and publish to GitHub release
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+      - name: Test
+        run: npm test
+      - name: Build html
+        run: npm run build-html
+      - name: Build pdf
+        run: npm run build-pdf
+
+      - name: Save html artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: html resume
+          path: resume.html
+      - name: Save pdf artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: pdf resume
+          path: resume.pdf
+
+  publish-to-release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download html artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: html resume
+      - name: Download pdf artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: pdf resume
+
+      - name: Upload html to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: resume.html
+          asset_name: resume.html
+          tag: ${{ github.ref }}
+          overwrite: true
+          body: html resume
+      - name: Upload pdf to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: resume.pdf
+          asset_name: resume.pdf
+          tag: ${{ github.ref }}
+          overwrite: true
+          body: pdf resume
+
+  publish-to-cv-repo:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download html artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: html resume
+          path: resume.html
+      - name: Download pdf artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: pdf resume
+          path: resume.pdf
+
+      - name: Rename html resume
+        run: mv resume.html index.html
+
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: '["index.html", "resume.pdf"]'
+          author_name: "GitHub Actions"
+          author_email: "actions@github.com"
+          message: "Update online resume to ${{ github.ref_name }}"
