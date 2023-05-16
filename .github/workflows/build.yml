@@ -1,4 +1,7 @@
-# this workflow builds the resume, and uploads it to the GitHub release that triggered the job
+# this workflow builds the resume,
+#  and uploads it to the GitHub release that triggered the job
+#  and replaces the `index.html` file in the `cv` repository
+#    (CV_REPO_TOKEN must be set in the secrets of this repository)
 name: build resume and publish to GitHub release
 
 on:
@@ -7,7 +10,7 @@ on:
       - "*"
 
 jobs:
-  build-and-publish:
+  build:
     runs-on: ubuntu-latest
 
     permissions:
@@ -41,6 +44,22 @@ jobs:
           name: pdf resume
           path: resume.pdf
 
+  publish-to-release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download html artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: html resume
+      - name: Download pdf artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: pdf resume
+
       - name: Upload html to release
         uses: svenstaro/upload-release-action@v2
         with:
@@ -59,3 +78,30 @@ jobs:
           tag: ${{ github.ref }}
           overwrite: true
           body: pdf resume
+
+  publish-to-cv-repo:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download html artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: html resume
+          path: resume.html
+      - name: Download pdf artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: pdf resume
+          path: resume.pdf
+
+      - name: Copy html and pdf to new directory
+        run: |
+          mkdir cv
+          cp resume.html cv/index.html
+          cp resume.pdf cv/resume.pdf
+
+      - name: Commit and push changes
+        run: echo "commit and push changes"
