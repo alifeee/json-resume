@@ -2,9 +2,46 @@
 
 My CV in JSON format based on <https://jsonresume.org/>.
 
-## [View resume online](https://registry.jsonresume.org/alifeee)
-
 ![Preview of resume online](images/resume_preview.png)
+
+## Where does it end up?
+
+1. On [`cv.alifeee.co.uk`]
+1. On the [json-resume registry] (via the [gist])
+1. PDF on the [releases page] or [website]
+
+[`cv.alifeee.co.uk`]: https://alifeee.github.io/json-resume/
+[json-resume registry]: https://registry.jsonresume.org/alifeee
+[gist]: https://gist.github.com/alifeee/97f9ac1642b1c46cf66942c3f079a42f
+[releases page]: https://github.com/alifeee/json-resume/releases
+[website]: https://alifeee.github.io/json-resume/Alfred-Renn-CV.pdf
+
+## Changing the theme
+
+A list of themes can be found at [https://jsonresume.org/themes/](https://jsonresume.org/themes/). A lot of these are broken. Some themes that look nice, and work well on mobile are:
+
+| Theme | Works locally | Works on registry |
+| ----- | -------------- | ----------------- |
+| [Even](https://github.com/rbardini/jsonresume-theme-even) | ✅ | ❌ |
+| [Kendall](https://github.com/linuxbozo/jsonresume-theme-kendall) | ✅ | ✅ |
+| [Paper](https://github.com/TimDaub/jsonresume-theme-paper) | ✅ | ❌ |
+| [Eloquent](https://github.com/thibaudcolas/jsonresume-theme-eloquent) | ✅ | ❌ |
+[Elegant](https://registry.jsonresume.org/alifeee?theme=elegant) | ❌² | ✅ |
+| [OnePage](https://github.com/ainsleyc/jsonresume-theme-onepage) | ❌² | ✅ |
+
+² - not installed locally as very outdated and full of npm vulnerabilities
+
+### Changing theme remotely
+
+The easiest way to experiment with themes is to update the resume gist (push to main) and visit the [JSON resume registry](https://registry.jsonresume.org/alifeee). The theme can be changed via the `theme` query parameter, e.g.:
+
+```url
+https://registry.jsonresume.org/alifeee?theme=even
+```
+
+### Changing theme locally
+
+Alternatively, the theme can be changed locally - see [development](#development).
 
 ## Development
 
@@ -27,27 +64,24 @@ npm install
 npm run test
 ```
 
-### Build HTML (with theme)
+### Build HTML
 
 ```bash
 npm run build-html
-# or
-npm run build-html -- even
-# or
-npm run build-html -- paper
-# ...
 ```
 
-### Run with watch (with theme)
+### Build HTML with theme "even"
+
+```bash
+npm install jsonresume-theme-even
+npm run build-html -- even
+```
+
+### Run with watch
 
 ```bash
 npm run dev
-# or
-npm run dev -- even
-# ...
 ```
-
-### View HTML
 
 Open `resume.html` using the VSCode Live Server extension.
 
@@ -59,58 +93,17 @@ Open `resume.html` using the VSCode Live Server extension.
 npm run build-pdf
 ```
 
-## Themes
-
-### Remote
-
-The easiest way to experiment with themes is to update the resume gist (push to main) and visit the [JSON resume registry](https://registry.jsonresume.org/alifeee). The theme can be changed via the `theme` query parameter, e.g.:
-
-```url
-https://registry.jsonresume.org/alifeee?theme=even
-```
-
-A list of themes can be found at [https://jsonresume.org/themes/](https://jsonresume.org/themes/). A lot of these are broken. Some promising looking themes (look nice, work well on mobile) are:
-
-- [Even](https://github.com/rbardini/jsonresume-theme-even) ²
-- [Kendall](https://github.com/linuxbozo/jsonresume-theme-kendall)
-- [Paper](https://github.com/TimDaub/jsonresume-theme-paper) ²
-- [Eloquent](https://github.com/thibaudcolas/jsonresume-theme-eloquent) ²
-- [Elegant](https://registry.jsonresume.org/alifeee?theme=elegant) (not installed as very outdated and full of npm vulnerabilities)
-- [OnePage](https://github.com/ainsleyc/jsonresume-theme-onepage) (not installed as very outdated and full of npm vulnerabilities)
-
-² - these do not work on `registry.jsonresume.org`
-
-### Local
-
-Alternatively, the theme can be changed locally by installing the theme
-
-```bash
-npm install --save jsonresume-theme-even
-```
-
-and then running the build command with the theme name
-
-```bash
-npm run build-html -- even
-```
-
-or updating `meta.theme` to the new theme in `resume.json` and running the build command
-
-```bash
-npm run build-html
-```
-
 ## GitHub Actions
 
-| Action | File | Description |
-| ------ | ---- | ----------- |
-| `Node.js CI` | `.github/workflows/node.js.yml` | Runs `npm test` on push to main. |
-| `GitHub Gist updater` | `.github/workflows/gist.yml` | Updates the [resume gist](https://gist.github.com/alifeee/97f9ac1642b1c46cf66942c3f079a42f) on push to main, so that the [JSON resume preview](https://registry.jsonresume.org/alifeee) stays updated. |
+See [the files themselves](.github/workflows) for more details.
 
-## Custom theme
+| Action | Description |
+| ------ | ----------- |
+| [`test.yml`] | Runs on pull request and push to `main`. Verifies that the `resume.json` conforms to the [json-resume schema] |
+| [`publish.yml`] | Runs on release (or tag). Builds the HTML and PDF, then pushes to: [releases page]; `publish` branch (viewable on [my GitHub pages]); and [resume gist]. |
 
-You can fork a theme's GitHub and [use npm to install from GitHub](https://stackoverflow.com/questions/13300137/how-to-edit-a-node-module-installed-via-npm).
-
-```bash
-npm install https://github.com/<username>/<repository>/tarball/<branch>
-```
+[`test.yml`]: .github/workflows/test.yml
+[json-resume schema]: https://jsonresume.org/schema/
+[`publish.yml`]: .github/workflows/publish.yml
+[resume gist]: https://gist.github.com/alifeee/97f9ac1642b1c46cf66942c3f079a42f
+[my GitHub pages]: https://alifeee.github.io/json-resume/
