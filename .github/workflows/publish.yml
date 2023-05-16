@@ -89,16 +89,21 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: publish
+
       - name: Download html artifact
         uses: actions/download-artifact@v2
         with:
           name: html resume
-          path: index.html
       - name: Download pdf artifact
         uses: actions/download-artifact@v2
         with:
           name: pdf resume
-          path: Alfred-Renn-CV.pdf
+
+      - name: Rename resume.html to index.html
+        run: mv resume.html index.html
+      - name: Rename resume.pdf to Alfred-Renn-CV.pdf
+        run: mv resume.pdf Alfred-Renn-CV.pdf
+
       - name: Git auto commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
