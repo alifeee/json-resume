@@ -85,27 +85,21 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - name: checkout publish branch
+        uses: actions/checkout@v3
+        with:
+          ref: publish
       - name: Download html artifact
         uses: actions/download-artifact@v2
         with:
           name: html resume
-          path: resume.html
+          path: index.html
       - name: Download pdf artifact
         uses: actions/download-artifact@v2
         with:
           name: pdf resume
-          path: resume.pdf
-
-      - name: Rename html resume
-        run: mv resume.html index.html
-      - name: Rename pdf resume
-        run: mv resume.pdf Alfred-Renn-CV-${{ github.ref_name }}.pdf
-
-      - name: Commit and push changes
-        uses: EndBug/add-and-commit@v9
+          path: Alfred-Renn-CV.pdf
+      - name: Git auto commit
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          add: '["index.html", "Alfred-Renn-CV-${{ github.ref_name }}.pdf"]'
-          author_name: "GitHub Actions"
-          author_email: "actions@github.com"
-          message: "Update online resume to ${{ github.ref_name }}"
+          commit_message: "Update resume to ${{ github.ref_name }}"
