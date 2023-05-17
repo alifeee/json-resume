@@ -16,12 +16,13 @@ const __dirname = path.dirname(__filename);
   await page.goto(`file://${__dirname}/resume.html`, {
     waitUntil: "networkidle0",
   });
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   await page.pdf({
     path: "resume.pdf",
     format: "A4",
   });
 
   await browser.close();
-})();
 
-console.log(`You can find your PDF resume at resume.pdf. Nice work! 🚀`);
+  console.log(`You can find your PDF resume at resume.pdf. Nice work! 🚀`);
+})();
