@@ -8,7 +8,8 @@
     "test": "node validate.js",
     "build-html": "node build.js",
     "build-pdf": "npm run build-html && node print.js",
-    "dev": "nodemon build.js"
+    "dev": "nodemon build.js",
+    "postinstall": "patch-package"
   },
   "repository": {
     "type": "git",
