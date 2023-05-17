@@ -119,3 +119,4 @@ See [the files themselves](.github/workflows) for more details.
 [`publish.yml`]: .github/workflows/publish.yml
 [resume gist]: https://gist.github.com/alifeee/97f9ac1642b1c46cf66942c3f079a42f
 [my GitHub pages]: https://alifeee.github.io/json-resume/
+[`update-gist.yml`]: .github/workflows/update-gist.yml
