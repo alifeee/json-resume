@@ -1,0 +1,42 @@
+diff --git a/node_modules/jsonresume-theme-kendall/print.css b/node_modules/jsonresume-theme-kendall/print.css
+index a13418f..2fa66c8 100644
+--- a/node_modules/jsonresume-theme-kendall/print.css
++++ b/node_modules/jsonresume-theme-kendall/print.css
+@@ -8,7 +8,7 @@ a[href]:after {
+ }
+ 
+ #photo{
+-  display: none;
++  /* display: none; */
+ }
+ 
+ .box {
+@@ -16,7 +16,7 @@ a[href]:after {
+ }
+ 
+ blockquote,
+-#education,
++#education > li,
+ #awards,
+ .contact-item,
+ .publication,
+@@ -81,11 +81,16 @@ blockquote,
+   position: absolute;
+   top: 8px;
+   right: 0;
+-  left: -1px;
++  left: 1mm;
+   height: 0;
+   width: 0;
+   border: solid transparent;
+-  border-right-color: #999;
++  border-left-color: #999;
+   border-width: 4px;
+   pointer-events: none;
+- }
++}
++ 
++@page {
++  size: A4;
++  margin: 0.5cm;
++}
