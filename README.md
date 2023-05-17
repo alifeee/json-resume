@@ -93,6 +93,17 @@ Open `resume.html` using the VSCode Live Server extension.
 npm run build-pdf
 ```
 
+## Editing the theme
+
+This is not advised, as if you edit too much locally, without releasing your own theme, then your CV will look different on the registry to how it does locally.
+
+However, I edit how the theme looks when printed to a PDF, as this does not have the same problems (I will never get a PDF from the registry). I do this by editing the package in `node_modules` and using patch-package to save the changes.
+
+```bash
+vim node_modules/jsonresume-theme-kendall/print.css
+npx patch-package jsonresume-theme-kendall
+```
+
 ## GitHub Actions
 
 See [the files themselves](.github/workflows) for more details.
