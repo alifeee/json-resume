@@ -247,7 +247,6 @@
       "keywords": ["Arduino", "Electronics", "C", "DIY"],
       "startDate": "2017",
       "endDate": "2017",
-      "url": "",
       "roles": ["Creator"],
       "entity": "Home",
       "type": "Hardware"
@@ -259,7 +258,6 @@
       "keywords": ["C", "Electronics"],
       "startDate": "2019-08-12",
       "endDate": "2019-09-20",
-      "url": "",
       "roles": ["Creator", "Tester"],
       "entity": "Viper RF",
       "type": "Hardware"
@@ -271,7 +269,6 @@
       "keywords": ["Physics", "Research", "Optics"],
       "startDate": "2020-01-10",
       "endDate": "2020-03-30",
-      "url": "",
       "roles": ["Student", "Researcher"],
       "entity": "Durham University",
       "type": "Research"
@@ -294,7 +291,6 @@
       "keywords": ["Python", "Physics", "Teaching"],
       "startDate": "2020-08-31",
       "endDate": "2020-10-02",
-      "url": "",
       "roles": ["Creator", "Tester"],
       "entity": "Durham University",
       "type": "Software"
@@ -306,7 +302,6 @@
       "keywords": ["Physics", "Research", "Optics"],
       "startDate": "2020-10-27",
       "endDate": "2021-04-15",
-      "url": "",
       "roles": ["Student", "Researcher"],
       "entity": "Durham University",
       "type": "Research"
@@ -318,7 +313,6 @@
       "keywords": ["Physics", "Atomic physics", "Machine Learning"],
       "startDate": "2021-08-01",
       "endDate": "2022-04-19",
-      "url": "",
       "roles": ["Student", "Researcher"],
       "entity": "Durham University",
       "type": "Research"
