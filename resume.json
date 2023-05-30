@@ -227,6 +227,11 @@
   ],
   "references": [
     {
+      "reference": "\"This is very neat thank you for this contribution.\"",
+      "name": "lavigne958, open-source pull request",
+      "url": "https://github.com/burnash/gspread/pull/1187#pullrequestreview-1451621771"
+    },
+    {
       "name": "Jim Mayock, Viper RF",
       "reference": "Available on request"
     },
