@@ -40,3 +40,19 @@ index a13418f..144a3a8 100644
 +  size: A4;
 +  margin: 0.5cm;
 +}
+diff --git a/node_modules/jsonresume-theme-kendall/resume.template b/node_modules/jsonresume-theme-kendall/resume.template
+index e287a61..3ea39c1 100644
+--- a/node_modules/jsonresume-theme-kendall/resume.template
++++ b/node_modules/jsonresume-theme-kendall/resume.template
+@@ -30,6 +30,11 @@
+             {{/photo}}
+             <div id="text-header" {{^photo}}style="margin-top: 90px;"{{/photo}}>
+               <h1>{{basics.name}}<br>{{#basics.label}}<span>{{basics.label}}</span>{{/basics.label}}</h1>
++              <span class="visible-print" href="{{website}}" target="_blank">
++                <i class="fas fa-globe ico" ></i>
++                View online!
++                <a href="https://cv.alifeee.co.uk">cv.alifeee.co.uk</a>
++              </span>
+             </div>
+           </div>
+         </div>
