@@ -1,5 +1,5 @@
 diff --git a/node_modules/jsonresume-theme-kendall/print.css b/node_modules/jsonresume-theme-kendall/print.css
-index a13418f..30be586 100644
+index a13418f..9a8ce72 100644
 --- a/node_modules/jsonresume-theme-kendall/print.css
 +++ b/node_modules/jsonresume-theme-kendall/print.css
 @@ -16,7 +16,7 @@ a[href]:after {
@@ -11,19 +11,7 @@ index a13418f..30be586 100644
  #awards,
  .contact-item,
  .publication,
-@@ -35,6 +35,11 @@ blockquote,
-   padding: 0 15px;
- }
- 
-+#view-online-link {
-+  padding-top: 0.5rem;
-+  display: block !important;
-+}
-+
- .skills .col-sm-offset-1,
- .interests .col-sm-offset-1{
-   margin-top: -10px;
-@@ -81,11 +86,16 @@ blockquote,
+@@ -81,11 +81,16 @@ blockquote,
    position: absolute;
    top: 8px;
    right: 0;
@@ -44,14 +32,14 @@ index a13418f..30be586 100644
 +  margin: 0.5cm;
 +}
 diff --git a/node_modules/jsonresume-theme-kendall/resume.template b/node_modules/jsonresume-theme-kendall/resume.template
-index e287a61..bc5ad6d 100644
+index e287a61..3ea39c1 100644
 --- a/node_modules/jsonresume-theme-kendall/resume.template
 +++ b/node_modules/jsonresume-theme-kendall/resume.template
 @@ -30,6 +30,11 @@
              {{/photo}}
              <div id="text-header" {{^photo}}style="margin-top: 90px;"{{/photo}}>
                <h1>{{basics.name}}<br>{{#basics.label}}<span>{{basics.label}}</span>{{/basics.label}}</h1>
-+              <span id="view-online-link" href="{{website}}" target="_blank" style="display:none">
++              <span class="visible-print" href="{{website}}" target="_blank">
 +                <i class="fas fa-globe ico" ></i>
 +                View online!
 +                <a href="https://cv.alifeee.co.uk">cv.alifeee.co.uk</a>
