@@ -245,14 +245,26 @@
   "interests": [
     {
       "name": "Board games",
-      "keywords": ["Founding president of Board Gaming Society at Sixth Form"]
+      "keywords": ["Founding President of Board Gaming Society"]
     },
     {
       "name": "Electronics",
       "keywords": [
-        "Arduino (microcontroller and circuit board building)",
-        "PC building"
+        "PC building",
+        "Arduino (microcontroller and circuit boards)"
       ]
+    },
+    {
+      "name": "Travel",
+      "keywords": ["Interrailing", "Low-carbon travel"]
+    },
+    {
+      "name": "Wheeled locomotion",
+      "keywords": ["Cycling", "Freeskating"]
+    },
+    {
+      "name": "toki pona (constructed language)",
+      "keywords": ["Zine printing", "Social media management"]
     }
   ],
   "references": [
