@@ -1,17 +1,17 @@
 diff --git a/node_modules/jsonresume-theme-kendall/print.css b/node_modules/jsonresume-theme-kendall/print.css
-index a13418f..144a3a8 100644
+index a13418f..2fa66c8 100644
 --- a/node_modules/jsonresume-theme-kendall/print.css
 +++ b/node_modules/jsonresume-theme-kendall/print.css
-@@ -7,16 +7,12 @@ a[href]:after {
-   content: none !important;
+@@ -8,7 +8,7 @@ a[href]:after {
  }
  
--#photo{
+ #photo{
 -  display: none;
--}
--
++  /* display: none; */
+ }
+ 
  .box {
-   margin-bottom: -10px;
+@@ -16,7 +16,7 @@ a[href]:after {
  }
  
  blockquote,
@@ -20,7 +20,7 @@ index a13418f..144a3a8 100644
  #awards,
  .contact-item,
  .publication,
-@@ -81,11 +77,16 @@ blockquote,
+@@ -81,11 +81,16 @@ blockquote,
    position: absolute;
    top: 8px;
    right: 0;
