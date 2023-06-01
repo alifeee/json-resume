@@ -30,5 +30,8 @@ try {
   process.exit();
 }
 
-writeFile("resume.html", render(resume));
+let html = render(resume);
+// replace "&#x2F;" with "/"
+html = html.replace(/&#x2F;/g, "/");
+writeFile("resume.html", html);
 console.log(`You can find your HTML resume at resume.html. Nice work! 🚀`);
