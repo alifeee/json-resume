@@ -36,5 +36,11 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
+  },
+  "nodemonConfig": {
+    "ignoreRoot": [
+      ".git"
+    ],
+    "ext": "js,mjs,json,template,css"
   }
 }
