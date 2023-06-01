@@ -269,16 +269,21 @@
   ],
   "references": [
     {
-      "name": "Jim Mayock, Viper RF",
-      "reference": "Available on request"
+      "reference": "\"This is very neat thank you for this contribution.\"",
+      "name": "lavigne958, open-source pull request",
+      "url": "https://github.com/burnash/gspread/pull/1187#pullrequestreview-1451621771"
     },
     {
-      "name": "Dr. Ifan Hughes, Durham University",
-      "reference": "Available on request"
+      "reference": "Available on request",
+      "name": "Jim Mayock, Viper RF"
     },
     {
-      "name": "Graeme Wintle, ByteSnap Design",
-      "reference": "Available on request"
+      "reference": "Available on request",
+      "name": "Prof. Ifan Hughes, Durham University"
+    },
+    {
+      "reference": "Available on request",
+      "name": "Graeme Wintle, ByteSnap Design"
     }
   ],
   "projects": [
