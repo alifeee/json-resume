@@ -46,11 +46,11 @@ jobs:
       contents: write
     steps:
       - name: Download html artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: html resume
       - name: Download pdf artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: pdf resume
 
@@ -85,11 +85,11 @@ jobs:
           ref: publish
 
       - name: Download html artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: html resume
       - name: Download pdf artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: pdf resume
 
