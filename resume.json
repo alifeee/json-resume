@@ -6,7 +6,7 @@
     "email": "alfredirenn@gmail.com",
     "phone": "",
     "url": "http://alifeee.co.uk",
-    "summary": "",
+    "summary": "Hi! I'm Alfred: physics graduate, toki pona speaker, and software engineer! I love to make beautiful things with code (mainly using HTML/CSS/JavaScript and Python), including websites, apps, and graphs! I'm a big believer in, and practise good quality, robust, and well-tested code, as well as powerful automation and well-organised git repositories. Do check out my website and GitHub!",
     "location": {
       "address": "",
       "postalCode": "",
@@ -183,7 +183,7 @@
       "title": "Florence Nightingale Award for Graphical Excellence",
       "date": "2019-07-03",
       "awarder": "Durham University",
-      "summary": "Awarded for the optimal presentation of quantitative data to illustrate a Helmholtz coil. Used <b>Python</b> for graphing."
+      "summary": "Awarded for the optimal presentation of quantitative data to illustrate a Helmholtz coil. Used Python for graphing."
     },
     {
       "title": "Durham Award for Academic Excellence",
@@ -198,12 +198,42 @@
     {
       "name": "Data Analysis",
       "level": "",
-      "keywords": ["Python", "Statistics"]
+      "keywords": ["Python", "Statistics", "Jupyter"]
     },
     {
       "name": "Web Development",
       "level": "",
       "keywords": ["HTML", "CSS", "JavaScript", "Vue"]
+    },
+    {
+      "name": "Git/Project Management",
+      "level": "",
+      "keywords": [
+        "Pull requests",
+        "Git issues",
+        "Open source maintainer",
+        "GitHub Actions",
+        "Release management"
+      ]
+    },
+    {
+      "name": "Great development practises",
+      "level": "",
+      "keywords": [
+        "Test-Driven Development",
+        "API Design",
+        "Reliable documentation"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "level": "",
+      "keywords": [
+        "Docker",
+        "Git",
+        "Continuous Integration",
+        "Continuous Deployment"
+      ]
     }
   ],
   "languages": [
@@ -215,28 +245,45 @@
   "interests": [
     {
       "name": "Board games",
-      "keywords": ["Founding president of Board Gaming Society at Sixth Form"]
+      "keywords": ["Founding President of Board Gaming Society"]
     },
     {
       "name": "Electronics",
       "keywords": [
-        "Arduino (microcontroller and circuit board building)",
-        "PC building"
+        "PC building",
+        "Arduino (microcontroller and circuit boards)"
       ]
+    },
+    {
+      "name": "Travel",
+      "keywords": ["Interrailing", "Low-carbon travel"]
+    },
+    {
+      "name": "Wheeled locomotion",
+      "keywords": ["Cycling", "Freeskating"]
+    },
+    {
+      "name": "toki pona (constructed language)",
+      "keywords": ["Zine printing", "Social media management"]
     }
   ],
   "references": [
     {
-      "name": "Jim Mayock, Viper RF",
-      "reference": "Available on request"
+      "reference": "\"This is very neat thank you for this contribution.\"",
+      "name": "lavigne958, open-source pull request",
+      "url": "https://github.com/burnash/gspread/pull/1187#pullrequestreview-1451621771"
     },
     {
-      "name": "Dr. Ifan Hughes, Durham University",
-      "reference": "Available on request"
+      "reference": "Available on request",
+      "name": "Jim Mayock, Viper RF"
     },
     {
-      "name": "Graeme Wintle, ByteSnap Design",
-      "reference": "Available on request"
+      "reference": "Available on request",
+      "name": "Prof. Ifan Hughes, Durham University"
+    },
+    {
+      "reference": "Available on request",
+      "name": "Graeme Wintle, ByteSnap Design"
     }
   ],
   "projects": [
@@ -263,19 +310,8 @@
       "type": "Hardware"
     },
     {
-      "name": "Optical rotation research project",
-      "description": "Investigated the phenomenon of optical rotation when light is shone through sugar solutions, including potential uses in science and industry, culminating in a 5-page scientific report",
-      "highlights": [],
-      "keywords": ["Physics", "Research", "Optics"],
-      "startDate": "2020-01-10",
-      "endDate": "2020-03-30",
-      "roles": ["Student", "Researcher"],
-      "entity": "Durham University",
-      "type": "Research"
-    },
-    {
       "name": "Personal website",
-      "description": "Used free time over summer to learn HTML/CSS/JavaScript to create a versatile website with physics simulations, games, and a collation of many physics resources for fellow Durham students",
+      "description": "Consistently updating my personal website with physics simulations, games, and a collation of many other pages and information",
       "highlights": [],
       "keywords": ["Web Development", "HTML", "CSS", "JavaScript"],
       "startDate": "2020-04-01",
@@ -296,17 +332,6 @@
       "type": "Software"
     },
     {
-      "name": "Atomic-force microscopy",
-      "description": "Imaged surfaces on the μm- and nm-scale to investigate the effect of carbon micro-particle size on the surface structure of glass, culminating in a 10-page scientific report",
-      "highlights": [],
-      "keywords": ["Physics", "Research", "Optics"],
-      "startDate": "2020-10-27",
-      "endDate": "2021-04-15",
-      "roles": ["Student", "Researcher"],
-      "entity": "Durham University",
-      "type": "Research"
-    },
-    {
       "name": "Machine learning for optimising laser cooling experiments",
       "description": "Used machine learning to optimise the cooling of atoms in a laser trap, culminating in a 33-page scientific report",
       "highlights": [],
@@ -316,6 +341,16 @@
       "roles": ["Student", "Researcher"],
       "entity": "Durham University",
       "type": "Research"
+    },
+    {
+      "name": "gspread (open-source project) (active maintainer)",
+      "description": "Maintaining an open-source Python library for interacting with Google Sheets, including adding new features, fixing bugs, and responding to user issues",
+      "highlights": [],
+      "keywords": ["Python", "Open source", "GitHub"],
+      "startDate": "2023-06-05",
+      "roles": ["Maintainer"],
+      "entity": "GitHub",
+      "type": "Software"
     }
   ],
   "meta": {
