@@ -1,0 +1,36 @@
+name: build resume and put into artifacts
+
+on:
+  push:
+    branches: ["*"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+      - name: Test
+        run: npm test
+      - name: Build html
+        run: npm run build-html
+      - name: Build pdf
+        run: npm run build-pdf
+
+      - name: Save html artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: html resume
+          path: resume.html
+      - name: Save pdf artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: pdf resume
+          path: resume.pdf
