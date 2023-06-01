@@ -198,12 +198,42 @@
     {
       "name": "Data Analysis",
       "level": "",
-      "keywords": ["Python", "Statistics"]
+      "keywords": ["Python", "Statistics", "Jupyter"]
     },
     {
       "name": "Web Development",
       "level": "",
       "keywords": ["HTML", "CSS", "JavaScript", "Vue"]
+    },
+    {
+      "name": "Git/Project Management",
+      "level": "",
+      "keywords": [
+        "Pull requests",
+        "Git issues",
+        "Open source maintainer",
+        "GitHub Actions",
+        "Release management"
+      ]
+    },
+    {
+      "name": "Great development practises",
+      "level": "",
+      "keywords": [
+        "Test-Driven Development",
+        "API Design",
+        "Reliable documentation"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "level": "",
+      "keywords": [
+        "Docker",
+        "Git",
+        "Continuous Integration",
+        "Continuous Deployment"
+      ]
     }
   ],
   "languages": [
