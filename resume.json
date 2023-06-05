@@ -269,21 +269,24 @@
   ],
   "references": [
     {
+      "reference": "[... W]e were very impressed with [Alfred]'s outstanding contribution to our business in a relatively short period. He demonstrated extremely high intelligence, organisation, good technical communication skills, work ethic,  and a positive attitude. [Available on request.]",
+      "name": "Jim Mayock, Viper RF. Matthew O'Keefe, PhD, MBA, Viper RF.",
+      "url": "mailto:jim.mayock@viper-rf.com,matthew.okeefe@viper-rf.com"
+    },
+    {
       "reference": "\"This is very neat thank you for this contribution.\"",
-      "name": "lavigne958, open-source pull request",
+      "name": " Alexandre Lavigne, open-source pull request.",
       "url": "https://github.com/burnash/gspread/pull/1187#pullrequestreview-1451621771"
     },
     {
-      "reference": "Available on request",
-      "name": "Jim Mayock, Viper RF"
+      "reference": "[Available on request.]",
+      "name": "Prof. Ifan Hughes, Durham University",
+      "url": "https://www.durham.ac.uk/staff/i-g-hughes/"
     },
     {
-      "reference": "Available on request",
-      "name": "Prof. Ifan Hughes, Durham University"
-    },
-    {
-      "reference": "Available on request",
-      "name": "Graeme Wintle, ByteSnap Design"
+      "reference": "[Available on request.]",
+      "name": "Graeme Wintle, ByteSnap Design",
+      "url": "mailto:graemew@bytesnap.co.uk"
     }
   ],
   "projects": [
