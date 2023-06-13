@@ -62,7 +62,6 @@ jobs:
           asset_name: resume.html
           tag: ${{ github.ref }}
           overwrite: true
-          body: html resume
       - name: Upload pdf to release
         uses: svenstaro/upload-release-action@v2
         with:
@@ -71,7 +70,6 @@ jobs:
           asset_name: resume.pdf
           tag: ${{ github.ref }}
           overwrite: true
-          body: pdf resume
 
   publish-to-gh-pages-branch:
     needs: build
