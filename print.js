@@ -34,7 +34,8 @@ async function timeout(ms) {
     );
   });
   // delay in case of images >:(
-  await timeout(5000);
+  // disabled because I hope it's not needed. re-enable if needed
+  // await timeout(5000);
   await page.pdf({
     path: "resume.pdf",
     format: "A4",
