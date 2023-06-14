@@ -2,7 +2,6 @@
   "recommendations": [
     "github.vscode-github-actions",
     "esbenp.prettier-vscode",
-    "valentjn.vscode-ltex",
-    "streetsidesoftware.code-spell-checker"
+    "valentjn.vscode-ltex"
   ]
 }
