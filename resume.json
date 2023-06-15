@@ -127,22 +127,18 @@
     {
       "institution": "Cottingham High School and Sixth Form College",
       "url": "https://www.cottinghamhigh.net/",
-      "area": "Physics, Mathematics, Further Mathematics",
-      "studyType": "A Level",
-      "startDate": "2016-09-01",
-      "endDate": "2018-07-06",
-      "score": "A*A*A*",
-      "courses": ["A* Physics", "A* Mathematics", "A* Further Mathematics"]
-    },
-    {
-      "institution": "Cottingham High School and Sixth Form College",
-      "url": "https://www.cottinghamhigh.net/",
-      "area": "",
-      "studyType": "GCSE",
+      "studyType": "A Level, GCSE",
       "startDate": "2011-09-01",
-      "endDate": "2016-07-06",
-      "score": "6A*, 4A, 2D*",
-      "courses": ["A* Mathematics", "A English", "+ 5A*, 3A, 2 Dist*"]
+      "endDate": "2018-07-06",
+      "score": "A* A* A* (A Level), 6A*, 4A, 2D* (GCSE)",
+      "courses": [
+        "A* Physics",
+        "A* Mathematics",
+        "A* Further Mathematics",
+        "(GCSE) A* Mathematics",
+        "(GCSE) A English",
+        "(GCSE) + 5A*, 3A, 2 Dist*"
+      ]
     }
   ],
   "awards": [
