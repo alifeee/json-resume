@@ -19,6 +19,24 @@ for (var i = 0; i < args.length; i++) {
 
 var resumeString = await readFile("resume.json", "utf-8");
 
+// redact name and pronouns
+if (redact) {
+  resumeString = resumeString.replace(/(Alfred Renn|Alfred)/g, "REDACTED");
+  resumeString = resumeString.replace(/\sHe\s/g, " They ");
+}
+
+const resume = JSON.parse(resumeString);
+
+// redact (remove) contact info and address
+
+if (redact) {
+  delete resume.basics.phone;
+  delete resume.basics.email;
+  delete resume.basics.location;
+  delete resume.basics.profiles;
+  delete resume.basics.url;
+  delete resume.basics.image;
+}
 
 // get theme from resume.json
 const resumeTheme = `jsonresume-theme-${resume.meta?.theme}`;
@@ -45,5 +63,17 @@ try {
 let html = render(resume);
 // replace "&#x2F;" with "/"
 html = html.replace(/&#x2F;/g, "/");
+
+// these removals are theme-specific (to kendall)
+if (redact) {
+  // remove "View online" link
+  html = html.replace(/<span class="visible-print"(.|\n)*?<\/span>/gm, "");
+  // no top margin needed without image
+  html = html.replace(
+    /\.container{\n  margin-top: 80px;/gm,
+    ".container{\n  margin-top: 0px;"
+  );
+}
+
 writeFile("resume.html", html);
 console.log(`You can find your HTML resume at resume.html. Nice work! 🚀`);
