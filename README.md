@@ -74,7 +74,13 @@ npm run build-html
 
 ```bash
 npm install jsonresume-theme-even
-npm run build-html -- even
+npm run build-html -- --even
+```
+
+### Build HTML and redact personal data
+
+```bash
+npm run build-html -- --redact
 ```
 
 ### Run with watch
