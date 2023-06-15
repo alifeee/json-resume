@@ -93,6 +93,12 @@ Open `resume.html` using the VSCode Live Server extension.
 npm run build-pdf
 ```
 
+### Build HTML then PDF (all)
+
+```bash
+npm run build-all
+```
+
 ## Editing the theme
 
 This is not advised, as if you edit too much locally, without releasing your own theme, then your CV will look different on the registry to how it does locally.

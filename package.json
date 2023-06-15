@@ -7,7 +7,8 @@
   "scripts": {
     "test": "node validate.js",
     "build-html": "node build.js",
-    "build-pdf": "npm run build-html && node print.js",
+    "build-pdf": "node print.js",
+    "build-all": "npm run build-html && npm run build-pdf",
     "dev": "nodemon build.js",
     "postinstall": "patch-package"
   },
