@@ -10,6 +10,14 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const args = process.argv.slice(2);
+var extraWait = 0;
+for (var i = 0; i < args.length; i++) {
+  if (args[i] === "--extra-wait") {
+    extraWait = 5000;
+  }
+}
+
 async function timeout(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -45,7 +53,8 @@ async function timeout(ms) {
   });
   // delay in case of images >:(
   // disabled because I hope it's not needed. re-enable if needed
-  // await timeout(5000);
+  // can be enabled with --extra-wait flag
+  await timeout(extraWait);
   await page.pdf({
     path: "resume.pdf",
     format: "A4",
