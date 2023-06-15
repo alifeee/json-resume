@@ -2,11 +2,23 @@
 // https://jsonresume.org/
 import { readFile, writeFile } from "node:fs/promises";
 
-const resume = JSON.parse(await readFile("resume.json", "utf-8"));
-
-// get environment theme from "node build.js <theme>"
+// get environment theme from "node build.js --<theme>"
+// or if "--redact", redact name and pronouns etc
 const args = process.argv.slice(2);
-const environmentTheme = args[0];
+var hasEnvironmentTheme = false;
+var environmentTheme;
+var redact = false;
+for (var i = 0; i < args.length; i++) {
+  if (args[i] === "--redact") {
+    redact = true;
+  } else if (args[i].startsWith("--")) {
+    hasEnvironmentTheme = true;
+    var environmentTheme = args[i].substring(2);
+  }
+}
+
+var resumeString = await readFile("resume.json", "utf-8");
+
 
 // get theme from resume.json
 const resumeTheme = `jsonresume-theme-${resume.meta?.theme}`;
