@@ -50,10 +50,26 @@ index a13418f..66555a5 100644
 +  margin: 0.5cm;
 +}
 diff --git a/node_modules/jsonresume-theme-kendall/resume.template b/node_modules/jsonresume-theme-kendall/resume.template
-index e287a61..3ea39c1 100644
+index e287a61..80be67c 100644
 --- a/node_modules/jsonresume-theme-kendall/resume.template
 +++ b/node_modules/jsonresume-theme-kendall/resume.template
-@@ -30,6 +30,11 @@
+@@ -16,6 +16,15 @@
+     <style type="text/css" media="print">
+     {{{printcss}}}
+     </style>
++
++    <!-- embed metas - https://ogp.me/ -->
++    <meta property="og:title" content="Alfred Renn" />
++    <meta property="og:type" content="website" />
++    <meta property="og:site" content="Alfred Renn's CV" />
++    <meta property="og:url" content="https://cv.alifeee.co.uk" />
++    <meta property="og:image" content="https://cv.alifeee.co.uk/profile-picture.png" />
++    <meta property="og:description" content="Alfred Renn's CV on the web" />
++    <meta property="og:locale" content="en_GB" />
+   </head>
+   <body>
+     <div class="container">
+@@ -30,6 +39,11 @@
              {{/photo}}
              <div id="text-header" {{^photo}}style="margin-top: 90px;"{{/photo}}>
                <h1>{{basics.name}}<br>{{#basics.label}}<span>{{basics.label}}</span>{{/basics.label}}</h1>
