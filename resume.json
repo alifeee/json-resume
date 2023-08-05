@@ -2,7 +2,7 @@
   "basics": {
     "name": "Alfred Renn",
     "label": "Software Engineer",
-    "image": "https://alifeee.co.uk/profile-picture.png",
+    "image": "https://cv.alifeee.co.uk/profile-picture.png",
     "email": "alfredirenn@gmail.com",
     "phone": "",
     "url": "http://alifeee.co.uk",
@@ -10,9 +10,9 @@
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Birmingham",
-      "countryCode": "GB",
-      "region": "West Midlands"
+      "city": "",
+      "countryCode": "UK",
+      "region": ""
     },
     "profiles": [
       {
