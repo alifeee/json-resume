@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ basics.name }}</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <p>
+        {{ basics.label }}
+      </p>
+      <p>
+        {{ basics.url }}
+      </p>
+      <p>
+        {{ basics.email }}
+        hi!
+      </p>
+    </main>
+    <footer></footer>
+  </body>
+</html>
