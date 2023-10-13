@@ -2,10 +2,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>{{ basics.name }}</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-gray-100">
     <header></header>
-    <main>
+    <main class="container mx-auto">
       <p>
         {{ basics.label }}
       </p>
@@ -14,7 +16,6 @@
       </p>
       <p>
         {{ basics.email }}
-        hi!
       </p>
     </main>
     <footer></footer>
