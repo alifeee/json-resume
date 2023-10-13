@@ -37,29 +37,31 @@
       <div class="row">
         <div class="col-xs-12">
           {{#if image}}
-          <div id="photo">
-            <img src="{{ image }}" alt="Photo of {{ name }}" />
-          </div>
-          {{/if}}
-          <div id="text-header">
-            {{#unless image}}
-            <style>
-              #text-header {
-                margin-top: 90px;
-              }
-            </style>
-            {{/unless}}
-            <h1>
-              {{ name }}
-              <br />
-              <span>
-                {{ label }}
+          <div id="photo-header" class="text-center">
+            <div id="photo">
+              <img src="{{ image }}" alt="Photo of {{ name }}" />
+            </div>
+            {{/if}}
+            <div id="text-header">
+              {{#unless image}}
+              <style>
+                #text-header {
+                  margin-top: 90px;
+                }
+              </style>
+              {{/unless}}
+              <h1>
+                {{ name }}
+                <br />
+                <span>
+                  {{ label }}
+                </span>
+              </h1>
+              <span class="visible-print" target="_blank">
+                <i class="fas fa-globe ico"></i>
+                View online! <a href="{{ ../meta.url }}">{{ ../meta.url }}</a>
               </span>
-            </h1>
-            <span class="visible-print" target="_blank">
-              <i class="fas fa-globe ico"></i>
-              View online! <a href="{{ ../meta.url }}">{{ ../meta.url }}</a>
-            </span>
+            </div>
           </div>
         </div>
       </div>
@@ -105,7 +107,15 @@
                     >
                   </div>
                   {{/if}}
-                  <div class="year">{{ startDate }} - {{ endDate }}</div>
+                  <div class="year">
+                    {{month startDate }} {{year startDate}}
+                    -
+                    {{#if endDate}}
+                    {{month endDate }} {{year endDate}}
+                    {{else}}
+                    Present
+                    {{/if}}
+                  </div>
                 </div>
               </div>
               <div class="row">
@@ -140,7 +150,9 @@
             <ul id="awards" class="clearfix">
               {{#each awards}}
               <li>
-                <div class="year pull-left">{{ date }}</div>
+                <div class="year pull-left">
+                  {{ month date }} {{ year date }}
+                </div>
                 <div class="description pull-right">
                   <h3>{{ awarder }}</h3>
                   <p><i class="fas fa-trophy ico"></i> {{ title }}</p>
@@ -161,7 +173,7 @@
               <div class="row">
                 <div class="details">
                   <div class="where">
-                    {{ organisation }}
+                    {{ organization }}
                   </div>
                   {{#if url}}
                   <div class="address">
@@ -170,7 +182,15 @@
                     </a>
                   </div>
                   {{/if}}
-                  <div class="year">{{ startDate }} - {{ endDate }}</div>
+                  <div class="year">
+                    {{month startDate }} {{year startDate}}
+                    -
+                    {{#if endDate}}
+                    {{month endDate }} {{year endDate}}
+                    {{else}}
+                    Present
+                    {{/if}}
+                  </div>
                 </div>
               </div>
               <div class="row">
@@ -247,9 +267,9 @@
                 <span class="fas fa-envelope fa-fw"></span>
               </div>
               <div class="title only pull-right">
-                <a href="mailto:{{ basics.email }}" target="_blank">{{
-                  basics.email
-                }}</a>
+                <a href="mailto:{{ basics.email }}" target="_blank">
+                  {{ basics.email }}
+                </a>
               </div>
             </div>
             {{/if}}
@@ -266,33 +286,14 @@
             {{#each basics.profiles}}
             <div class="contact-item">
               <div class="icon pull-left text-center">
-                <span class="{{ iconClass }} fa-fw"></span>
+                <span class="{{ iconify network }} fa-fw"></span>
               </div>
               <div class="title pull-right">{{ network }}</div>
               <div class="description pull-right">
-                <a href="{{ url }}" target="_blank"
-                  >{{#if username}}{{ username
-                  }}{{/if
-
-
-
-
-
-
-
-
-                  }}{{#unless username
-
-
-
-
-
-
-
-
-
-                  }}{{ url }}{{/unless}}</a
-                >
+                <a href="{{ url }}" target="_blank">
+                  {{ username }}
+                  {{#unless username}}{{ url }}{{/unless}}
+                </a>
               </div>
             </div>
             {{/each}}
@@ -305,7 +306,9 @@
             <ul id="education" class="clearfix">
               {{#each education}}
               <li>
-                <div class="year pull-left">{{ startDate }} {{ endDate }}</div>
+                <div class="year pull-left">
+                  {{ year startDate }} {{ year endDate }}
+                </div>
                 <div class="description pull-right">
                   <h3>{{ institution }}</h3>
                   <div class="where">{{ organization }}</div>
@@ -325,7 +328,7 @@
                   {{#if score}}
                   <p>Grade: {{ score }}</p>
                   {{/if}}
-                  {{#if educationCourses}}
+                  {{#if courses}}
                   <div>Courses</div>
                   <ul class="list-group">
                     {{#each courses}}
@@ -356,7 +359,7 @@
               </div>
               <div class="col-sm-offset-1 col-sm-12 clearfix">
                 {{#each keywords}}
-                <span class="label label-default">{{ this }}</span>
+                <span class="skill badge">{{ this }}</span>
                 {{/each}}
               </div>
             </div>
@@ -379,7 +382,10 @@
                   <i class="fas fa-bookmark ico"></i> {{ publisher }}
                 </div>
                 {{/if}}
-                <div class="year">{{ releaseDate }}</div>
+                <div class="year">
+                  {{ day releaseDate }} {{ month releaseDate }}
+                  {{ year releaseDate }}
+                </div>
                 {{#if url}}
                 <div class="address">
                   <a href="{{ url }}" target="_blank"
