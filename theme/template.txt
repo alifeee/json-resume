@@ -16,10 +16,7 @@
     <!-- tailwind -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <!-- bootstrap -->
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="bootstrap.min.css" rel="stylesheet" />
     <!-- fontawesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
