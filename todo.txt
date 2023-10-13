@@ -1,2 +1,0 @@
-replace validation with resumed.json validation
-add pdf generation

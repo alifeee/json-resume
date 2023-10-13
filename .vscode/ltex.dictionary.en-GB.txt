@@ -1,4 +1,0 @@
-VSCode
-npm
-OnePage
-json-resume
