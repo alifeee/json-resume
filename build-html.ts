@@ -1,6 +1,7 @@
 import Handlebars from "handlebars";
 import cv from "./cv.json";
 import template from "./theme/template.txt";
+import { readdir, mkdir } from "node:fs/promises";
 
 export function dateToYear(date: string): string {
   return new Date(date).getFullYear().toString();
@@ -48,7 +49,25 @@ export function compile(template: string, content: object): string {
 }
 
 if (import.meta.main) {
+  // if /build does not exist, create it
+  try {
+    await readdir("./build");
+  } catch (err) {
+    await mkdir("./build");
+  }
+
+  // copy all files in /theme to /build
+  Bun.write("./build/style.css", Bun.file("./theme/style.css"));
+  Bun.write("./build/print.css", Bun.file("./theme/print.css"));
+  Bun.write("./build/bootstrap.min.css", Bun.file("./theme/bootstrap.min.css"));
+  Bun.write(
+    "./build/fontawesome.min.css",
+    Bun.file("./theme/fontawesome.min.css")
+  );
+
+  // compile template
   const html = compile(template, cv);
-  await Bun.write("cv.html", html);
-  console.log(`Saved cv.html`);
+  await Bun.write("./build/cv.html", html);
+
+  console.log(`Saved ./build/cv.html`);
 }
