@@ -1,3 +1,8 @@
+# build files
+/index.html
+
+# The following from Bun
+
 # Based on https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore
 
 # Logs
