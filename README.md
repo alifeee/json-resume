@@ -1,5 +1,29 @@
 # CV
 
+My CV in JSON format based on <https://jsonresume.org/>.
+
+![Preview of CV online](images/cv_online.png)
+
+## Where does it end up?
+
+1. On [`cv.alifeee.co.uk`]
+1. On the [json-resume registry] (via the [gist])
+1. PDF on the [releases page] or [website]
+
+[`cv.alifeee.co.uk`]: https://cv.alifeee.co.uk
+[json-resume registry]: https://registry.jsonresume.org/alifeee
+[gist]: https://gist.github.com/alifeee/97f9ac1642b1c46cf66942c3f079a42f
+[releases page]: https://github.com/alifeee/json-resume/releases
+[website]: https://alifeee.github.io/json-resume/Alfred-Renn-CV.pdf
+
+## Changing the theme
+
+A list of themes can be found at [https://jsonresume.org/themes/](https://jsonresume.org/themes/). You can try them by visiting the [JSON resume registry](https://registry.jsonresume.org/alifeee). The theme can be changed via the `theme` query parameter, e.g.:
+
+```url
+https://registry.jsonresume.org/alifeee?theme=even
+```
+
 ## Development
 
 ### Install dependencies
@@ -12,6 +36,18 @@ bun install
 
 ```bash
 npm install puppeteer
+```
+
+### Test
+
+```bash
+bun test
+```
+
+### Spellcheck
+
+```bash
+bunx cspell "cv.json"
 ```
 
 ### Build HTML
@@ -39,3 +75,23 @@ Using it like this, sometimes VSCode's file explorer does not refresh properly.
 ```bash
 bun --hot index.ts
 ```
+
+## GitHub Actions
+
+See [the files themselves](.github/workflows) for more details.
+
+| Action | Description |
+| ------ | ----------- |
+| [`test.yml`] | Runs on pull request and push to `main`. Verifies that the `resume.json` conforms to the [json-resume schema], [JS tests] pass, and runs [spellcheck] |
+| [`publish.yml`] | Runs on release (or tag). Builds the HTML and PDF, then pushes to: [releases page]; and [`publish` branch] (viewable on [my GitHub pages]). |
+| [`gist.yml`] | Runs on release (or tag). Updates the [resume gist] if `resume.json` has changed. |
+
+[`test.yml`]: .github/workflows/test.yml
+[json-resume schema]: https://jsonresume.org/schema/
+[`publish.yml`]: .github/workflows/publish.yml
+[resume gist]: https://gist.github.com/alifeee/97f9ac1642b1c46cf66942c3f079a42f
+[my GitHub pages]: https://alifeee.github.io/json-resume/
+[`gist.yml`]: .github/workflows/gist.yml
+[JS tests]: ./test.spec.ts
+[spellcheck]: #spellcheck
+[`publish` branch]: https://github.com/alifeee/json-resume/tree/publish
