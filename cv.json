@@ -10,7 +10,7 @@
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "",
+      "city": "Sheffield",
       "countryCode": "UK",
       "region": ""
     },
@@ -308,6 +308,7 @@
     }
   ],
   "meta": {
-    "theme": "kendall"
+    "theme": "kendall",
+    "url": "https://cv.alifeee.co.uk"
   }
 }
