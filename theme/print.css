@@ -1,5 +1,5 @@
 body {
-  font-size: .95em;
+  font-size: 0.95em;
   -webkit-print-color-adjust: exact;
 }
 
@@ -7,7 +7,7 @@ a[href]:after {
   content: none !important;
 }
 
-#photo{
+#photo {
   /* display: none; */
 }
 
@@ -25,18 +25,18 @@ blockquote,
   page-break-inside: avoid;
 }
 
-.col-sm-5{
+.col-sm-5 {
   width: 40%;
   padding: 0 15px;
 }
 
-.col-sm-7{
+.col-sm-7 {
   width: 60%;
   padding: 0 15px;
 }
 
 .skills .col-sm-offset-1,
-.interests .col-sm-offset-1{
+.interests .col-sm-offset-1 {
   margin-top: -10px;
   margin-bottom: 5px;
 }
@@ -57,7 +57,7 @@ blockquote,
 }
 .publication,
 .publication .panel-heading,
-.publication .name{
+.publication .name {
   margin: 0;
   padding: 0 5px;
   border: none;
@@ -71,13 +71,13 @@ blockquote,
   /* margin: 0; */
 }
 
-.list-group-item{
+.list-group-item {
   border: none;
   margin: 0;
   padding: 5px 15px;
 }
-.list-group-item:after{
-  content: '';
+.list-group-item:after {
+  content: "";
   position: absolute;
   top: 8px;
   right: 0;
@@ -89,7 +89,7 @@ blockquote,
   border-width: 4px;
   pointer-events: none;
 }
- 
+
 @page {
   size: A4;
   margin: 0.5cm;

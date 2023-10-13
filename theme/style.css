@@ -1,13 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
 @charset "utf-8";
-@-webkit-viewport   { width: device-width; }
-@-moz-viewport      { width: device-width; }
-@-ms-viewport       { width: device-width; }
-@-o-viewport        { width: device-width; }
-@viewport           { width: device-width; }
+@-webkit-viewport {
+  width: device-width;
+}
+@-moz-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
 
-body{
-  font-family: 'Open Sans', Arial, Tahoma;
+body {
+  font-family: "Open Sans", Arial, Tahoma;
   font-weight: 400;
   color: #363636;
   background: #334960;
@@ -16,16 +26,16 @@ blockquote {
   font-size: 1em;
 }
 
-.container{
+.container {
   margin-top: 80px;
   margin-bottom: 15px;
   background: #fff;
 }
 
-#photo-header{
+#photo-header {
   margin-top: -75px;
 }
-#photo{
+#photo {
   width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -34,12 +44,12 @@ blockquote {
   background: #334960;
   display: inline-block;
 }
-#photo img{
+#photo img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
-#text-header h1{
+#text-header h1 {
   margin: 0;
   padding: 0;
   font-size: 1.5em;
@@ -47,32 +57,32 @@ blockquote {
   text-transform: uppercase;
   letter-spacing: -1px;
 }
-#text-header h1::first-line{
+#text-header h1::first-line {
   font-size: 1.5em;
   font-weight: 800;
   line-height: 1.5em;
 }
-#text-header h1 span{
+#text-header h1 span {
   color: #334960;
   opacity: 0.7;
 }
-#text-header h1 sup{
+#text-header h1 sup {
   opacity: 0.5;
 }
-#text-header:after{
+#text-header:after {
   width: 100%;
   height: 3px;
   border-bottom: 1px solid #ddd;
   margin-top: 15px;
-  content: '';
+  content: "";
   display: block;
 }
 
-.box{
+.box {
   padding-bottom: 10px;
   margin-bottom: 25px;
 }
-.box h2{
+.box h2 {
   color: #227c74;
   font-size: 1.5em;
   font-weight: 700;
@@ -80,7 +90,7 @@ blockquote {
 }
 
 #awards,
-#education{
+#education {
   margin-top: 20px;
   margin-bottom: 0;
   position: relative;
@@ -94,26 +104,64 @@ blockquote {
   position: absolute;
   left: 35px;
   top: 0;
-  content: ' ';
+  content: " ";
   display: block;
   background: #32475c;
-  background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
-  background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-  background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-  background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-  background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -moz-linear-gradient(
+    top,
+    #ffffff 0%,
+    #32475c 7%,
+    #32475c 89%,
+    #ffffff 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #ffffff),
+    color-stop(7%, #32475c),
+    color-stop(89%, #32475c),
+    color-stop(100%, #ffffff)
+  );
+  background: -webkit-linear-gradient(
+    top,
+    #ffffff 0%,
+    #32475c 7%,
+    #32475c 89%,
+    #ffffff 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    #ffffff 0%,
+    #32475c 7%,
+    #32475c 89%,
+    #ffffff 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    #ffffff 0%,
+    #32475c 7%,
+    #32475c 89%,
+    #ffffff 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #32475c 7%,
+    #32475c 89%,
+    #ffffff 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 }
 #awards li,
-#education li{
+#education li {
   width: 100%;
   z-index: 2;
   position: relative;
   float: left;
 }
 #awards .year,
-#education .year{
+#education .year {
   width: 14%;
   background: #fff;
   padding: 10px;
@@ -121,7 +169,7 @@ blockquote {
   display: inline-block;
 }
 #awards .description,
-#education .description{
+#education .description {
   width: 83%;
   display: inline-block;
   background: #eee;
@@ -133,7 +181,7 @@ blockquote {
 }
 #awards .description:after,
 #education .description:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 15px;
   right: 0;
@@ -146,19 +194,19 @@ blockquote {
   pointer-events: none;
 }
 #awards .description h3,
-#education .description h3{
+#education .description h3 {
   font-size: 1.2em;
   margin: 0;
   padding: 0;
   font-weight: 700;
 }
 #awards .description p,
-#education .description p{
+#education .description p {
   margin-top: 5px;
   padding: 0;
 }
 
-.job{
+.job {
   margin-bottom: 15px;
 }
 .job .details {
@@ -170,21 +218,21 @@ blockquote {
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
-.job .where{
+.job .where {
   font-size: 1.2em;
   font-weight: bold;
 }
-.job .year{
+.job .year {
   opacity: 0.7;
 }
-.job .profession{
+.job .profession {
   font-size: 1.2em;
   font-weight: bold;
 }
-.job .description{
+.job .description {
   line-height: 1.5em;
 }
-.job .highlights{
+.job .highlights {
   padding: 5px 0;
   font-weight: bold;
 }
@@ -195,49 +243,49 @@ blockquote {
 .publication {
   margin-bottom: 0;
 }
-.publication .name{
+.publication .name {
   font-size: 1em;
   font-weight: bold;
 }
-.publication .year{
-    opacity: 0.7;
+.publication .year {
+  opacity: 0.7;
 }
-.publication p{
+.publication p {
   margin: 0;
   padding-top: 10px;
 }
 
-.contact-item{
+.contact-item {
   width: 100%;
   float: left;
 }
-.contact-item .icon{
+.contact-item .icon {
   padding: 10px;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   color: #32475c;
   background: #eee;
 }
-.contact-item:last-child .icon{
+.contact-item:last-child .icon {
   border-bottom: none;
 }
-.contact-item .title{
+.contact-item .title {
   width: 80%;
   width: calc(100% - 55px);
   font-weight: 700;
   opacity: 0.9;
 }
-.contact-item .title.only{
+.contact-item .title.only {
   margin-top: 10px;
 }
-.contact-item .description{
+.contact-item .description {
   width: 80%;
   width: calc(100% - 55px);
   color: #334960;
 }
 
 .item-interests,
-.item-skills{
+.item-skills {
   height: 30px;
   color: #334960;
   padding: 5px 10px;
@@ -249,7 +297,7 @@ blockquote {
   font-weight: 600;
 }
 .interest,
-.skill{
+.skill {
   color: #fff;
   display: inline-block;
   margin-right: 5px;
@@ -257,19 +305,19 @@ blockquote {
   padding: 5px 10px;
   background: #32475c;
   position: relative;
-  font-size: .85em;
+  font-size: 0.85em;
 }
 .skill-level {
   background-color: #227c74;
   border-radius: 4px;
   color: #fff;
   padding: 1px 8px;
-  font-size: .75em;
+  font-size: 0.75em;
   position: absolute;
   margin: 1px 10px;
 }
 
-#language-skills .skill{
+#language-skills .skill {
   margin: 10px 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
