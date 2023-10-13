@@ -6,7 +6,7 @@ const cv_path = "cv.json";
 const cv_file = Bun.file(cv_path);
 const cv = await cv_file.json();
 
-test("resume is valid to schema", async () => {
+test("cv is valid to schema", async () => {
   let error: Error | null = null;
   let report: string | null = null;
 
