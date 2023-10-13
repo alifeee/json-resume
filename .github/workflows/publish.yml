@@ -26,16 +26,11 @@ jobs:
       - name: Build pdf
         run: bun build-pdf.ts
 
-      - name: Save html artifact
+      - name: Save artifact
         uses: actions/upload-artifact@v3
         with:
-          name: html cv
-          path: ./build/cv.html
-      - name: Save pdf artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: pdf cv
-          path: ./build/cv.pdf
+          name: build
+          path: build
 #   publish-release-files:
 #     needs: build
 #     runs-on: ubuntu-latest
