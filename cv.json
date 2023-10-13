@@ -1,0 +1,313 @@
+{
+  "basics": {
+    "name": "Alfred Renn",
+    "label": "Software Engineer",
+    "image": "https://cv.alifeee.co.uk/profile-picture.png",
+    "email": "alfredirenn@gmail.com",
+    "phone": "",
+    "url": "http://alifeee.co.uk",
+    "summary": "Hi! I'm Alfred: physics graduate, toki pona speaker, and software engineer. I love to make beautiful things with code (mainly using HTML/CSS/JavaScript and Python), including websites, apps, and graphs. With all my work I create good quality, robust, and well-tested code, as well as powerful automation and well-organised git repositories, empowering collaboration. Do check out my website and GitHub!",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "UK",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "Blog",
+        "url": "https://blog.alifeee.co.uk"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "alfredrenn",
+        "url": "https://www.linkedin.com/in/alfredrenn"
+      },
+      {
+        "network": "GitHub",
+        "username": "alifeee",
+        "url": "https://github.com/alifeee"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "ByteSnap Design",
+      "company": "ByteSnap Design",
+      "position": "Software Engineer",
+      "url": "https://www.bytesnap.com/",
+      "startDate": "2022-08-22",
+      "endDate": "2023-03-03",
+      "summary": "Designed, developed, and engineered various web applications for both internal and customer projects, utilizing a range of programming languages and frameworks to build powerful software solutions.",
+      "highlights": [
+        "Utilised <b>Vue</b> and <b>TypeScript</b> to create an intuitive, user-friendly web application, using robust design patterns and best practices to ensure optimal functionality and user experience",
+        "Designed and developed a responsive, feature-rich web application using <b>Flutter</b> and <b>Dart</b>, incorporating a range of views and user-friendly interfaces for maximum ease of use",
+        "Employed <b>WPF</b> and <b>C#</b> to create a high-performance application, using <b>SQL</b> and an MVC architecture to facilitate the viewing, manipulation, and analysis of data",
+        "Streamlined the deployment process of complex code with multiple dependencies, using <b>Docker</b> and <b>GitLab</b> CI to optimise the development process and improve productivity"
+      ]
+    },
+    {
+      "name": "Durham University Physics Department",
+      "company": "Durham University Physics Department",
+      "position": "Solar Physics Research Student",
+      "url": "https://www.dur.ac.uk/qlm/",
+      "startDate": "2021-06-14",
+      "endDate": "2021-08-13",
+      "summary": "Researching novel telescope imaging techniques using quantum gases",
+      "highlights": [
+        "Developed robust code with <b>Python</b> for fabricating and analysing images from a solar telescope",
+        "Performed deep literature review to justify techniques used in the creation of said telescope",
+        "Discussed and acted upon desires and needs of telescope engineers, theorists, and observationalists"
+      ]
+    },
+    {
+      "name": "Durham University Physics Department",
+      "company": "Durham University Physics Department",
+      "position": "Content Developer",
+      "url": "https://www.durham.ac.uk/departments/academic/physics/",
+      "startDate": "2020-08-31",
+      "endDate": "2020-10-02",
+      "summary": "Developing interactive teaching content for a better online learning experience in the pandemic",
+      "highlights": [
+        "Utilised <b>Python</b> to create highly interactive learning resources for Durham physics students",
+        "Worked remotely with lecturers to deliver content tailored to their needs and desires",
+        "Organised fellow interns as a group by creating task rotas to encourage teamwork and mitigate work-duplication, establishing efficient development"
+      ]
+    },
+    {
+      "name": "Viper RF",
+      "company": "Viper RF",
+      "position": "Design Engineer Intern",
+      "url": "https://www.viper-rf.com/",
+      "startDate": "2019-08-12",
+      "endDate": "2019-09-20",
+      "summary": "Designing and testing real-time optimisation for an ion satellite thruster",
+      "highlights": [
+        "Programmed and debugged a real-time optimisation algorithm on a microcontroller with <b>C</b>",
+        "Provided R&D updates and creative input to problem solving",
+        "Worked on commercially sensitive and highly confidential new product developments using advanced software",
+        "Liaised directly with customers on work done with radio-frequency electronics"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "gspread - Simple interface for working with Google Sheets",
+      "position": "Open-source Maintainer",
+      "url": "https://github.com/burnash/gspread/",
+      "startDate": "2023-06-06",
+      "summary": "Maintaining an open-source Python library for interacting with Google Sheets, including adding new features, fixing bugs, and responding to user issues"
+    },
+    {
+      "organization": "British Heart Foundation",
+      "position": "Electrical Tester",
+      "url": "https://www.bhf.org.uk/",
+      "startDate": "2023-03-23",
+      "summary": "Testing electrical equipment for the British Heart Foundation home shop",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Durham University",
+      "url": "https://www.durham.ac.uk/",
+      "studyType": "MPhys Physics",
+      "startDate": "2018-09-01",
+      "endDate": "2022-07-06",
+      "score": "1st (77%)",
+      "courses": [
+        "Masters Project (Machine Learning & Quantum Optics)",
+        "Atoms, Lasers and Qubits",
+        "Advanced Theoretical Physics",
+        "Advanced Astrophysics"
+      ]
+    },
+    {
+      "institution": "Cottingham High School and Sixth Form College",
+      "url": "https://www.cottinghamhigh.net/",
+      "studyType": "A Level, GCSE",
+      "startDate": "2011-09-01",
+      "endDate": "2018-07-06",
+      "score": "A* A* A* (A Level), 6A*, 4A, 2D* (GCSE)",
+      "courses": [
+        "A* Physics",
+        "A* Mathematics",
+        "A* Further Mathematics",
+        "(GCSE) A* Mathematics",
+        "(GCSE) A English",
+        "(GCSE) + 5A*, 3A, 2 Dist*"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Florence Nightingale Award for Graphical Excellence",
+      "date": "2019-07-03",
+      "awarder": "Durham University",
+      "summary": "Awarded for the optimal presentation of quantitative data to illustrate a Helmholtz coil. Used Python for graphing."
+    }
+  ],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Data Analysis",
+      "level": "",
+      "keywords": ["Python", "Statistics", "Jupyter"]
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": ["HTML", "CSS", "JavaScript", "Vue"]
+    },
+    {
+      "name": "Git/Project Management",
+      "level": "",
+      "keywords": [
+        "Pull requests",
+        "Git issues",
+        "Open source maintainer",
+        "GitHub Actions",
+        "Release management"
+      ]
+    },
+    {
+      "name": "Great development practises",
+      "level": "",
+      "keywords": [
+        "Test-Driven Development",
+        "API Design",
+        "Reliable documentation"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "level": "",
+      "keywords": [
+        "Docker",
+        "Git",
+        "Continuous Integration",
+        "Continuous Deployment"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Board games",
+      "keywords": ["Founding President of Board Gaming Society"]
+    },
+    {
+      "name": "Electronics",
+      "keywords": [
+        "PC building",
+        "Arduino (microcontroller and circuit boards)"
+      ]
+    },
+    {
+      "name": "Open-source",
+      "keywords": ["Contributing to open-source projects"]
+    },
+    {
+      "name": "Wheeled locomotion",
+      "keywords": ["Cycling", "Freeskating"]
+    },
+    {
+      "name": "toki pona (constructed language)",
+      "keywords": ["Zine printing", "Social media management"]
+    }
+  ],
+  "references": [
+    {
+      "reference": "[... W]e were very impressed with [Alfred]'s outstanding contribution to our business in a relatively short period. He demonstrated extremely high intelligence, organisation, good technical communication skills, work ethic,  and a positive attitude. [Available on request.]",
+      "name": "Jim Mayock, Viper RF. Matthew O'Keefe, PhD, MBA, Viper RF.",
+      "url": "mailto:jim.mayock@viper-rf.com,matthew.okeefe@viper-rf.com"
+    },
+    {
+      "reference": "\"This is very neat thank you for this contribution.\"",
+      "name": " Alexandre Lavigne, open-source pull request.",
+      "url": "https://github.com/burnash/gspread/pull/1187#pullrequestreview-1451621771"
+    },
+    {
+      "reference": "\"Thanks @strib and. @alifeee - very good team work!!!!\"",
+      "name": "Romano Silva, open-source pull request.",
+      "url": "https://github.com/keyteki/keyteki/pull/3222#issuecomment-1589734669"
+    },
+    {
+      "reference": "[Available on request.]",
+      "name": "Prof. Ifan Hughes, Durham University",
+      "url": "https://www.durham.ac.uk/staff/i-g-hughes/"
+    },
+    {
+      "reference": "[Available on request.]",
+      "name": "Graeme Wintle, ByteSnap Design",
+      "url": "mailto:graemew@bytesnap.co.uk"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Custom racing wheel",
+      "description": "Used Arduino to create a steering wheel for driving games, improving practical knowledge of electronics and coding skills, and evolving a robust toolset for microcontroller development",
+      "highlights": [],
+      "keywords": ["Arduino", "Electronics", "C", "DIY"],
+      "startDate": "2017",
+      "endDate": "2017",
+      "roles": ["Creator"],
+      "entity": "Home",
+      "type": "Hardware"
+    },
+    {
+      "name": "Real-time power optimisation for a satellite thruster",
+      "description": "Used a microcontroller to minimise power losses for a microwave generator, to be used in space satellites, improving industry knowledge and personal skills",
+      "highlights": [],
+      "keywords": ["C", "Electronics"],
+      "startDate": "2019-08-12",
+      "endDate": "2019-09-20",
+      "roles": ["Creator", "Tester"],
+      "entity": "Viper RF",
+      "type": "Hardware"
+    },
+    {
+      "name": "Personal website",
+      "description": "Consistently updating my personal website with physics simulations, games, and a collation of many other pages and information",
+      "highlights": [],
+      "keywords": ["Web Development", "HTML", "CSS", "JavaScript"],
+      "startDate": "2020-04-01",
+      "url": "https://www.alifeee.co.uk",
+      "roles": ["Creator", "Maintainer"],
+      "entity": "Home",
+      "type": "Web Development"
+    },
+    {
+      "name": "Quantum mechanics simulation",
+      "description": "Simulated a finite square well with Python to create a learning resource for physics students, requiring data manipulation and creative problem solving to get a responsive application",
+      "highlights": [],
+      "keywords": ["Python", "Physics", "Teaching"],
+      "startDate": "2020-08-31",
+      "endDate": "2020-10-02",
+      "roles": ["Creator", "Tester"],
+      "entity": "Durham University",
+      "type": "Software"
+    },
+    {
+      "name": "Machine learning for optimising laser cooling experiments",
+      "description": "Used machine learning to optimise the cooling of atoms in a laser trap, culminating in a 33-page scientific report",
+      "highlights": [],
+      "keywords": ["Physics", "Atomic physics", "Machine Learning"],
+      "startDate": "2021-08-01",
+      "endDate": "2022-04-19",
+      "roles": ["Student", "Researcher"],
+      "entity": "Durham University",
+      "type": "Research"
+    }
+  ],
+  "meta": {
+    "theme": "kendall"
+  }
+}
