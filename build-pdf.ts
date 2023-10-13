@@ -13,4 +13,4 @@ await Bun.write("./build/cv.pdf", pdf);
 
 await browser.close();
 
-console.log(`Saved ./build/cv.pdf`);
+console.log(`You can find your PDF resume at ./build/cv.pdf. Nice work! 🚀`);
