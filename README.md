@@ -12,6 +12,12 @@ To run:
 bun run index.ts
 ```
 
+To run with hot reload:
+
+```bash
+bun --hot index.ts
+```
+
 This project was created using `bun init` in bun v1.0.5. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
 
 ## Using in VSCode
