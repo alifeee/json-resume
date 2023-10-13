@@ -41,10 +41,10 @@
       "endDate": "2023-03-03",
       "summary": "Designed, developed, and engineered various web applications for both internal and customer projects, utilizing a range of programming languages and frameworks to build powerful software solutions.",
       "highlights": [
-        "Utilised <b>Vue</b> and <b>TypeScript</b> to create an intuitive, user-friendly web application, using robust design patterns and best practices to ensure optimal functionality and user experience",
-        "Designed and developed a responsive, feature-rich web application using <b>Flutter</b> and <b>Dart</b>, incorporating a range of views and user-friendly interfaces for maximum ease of use",
-        "Employed <b>WPF</b> and <b>C#</b> to create a high-performance application, using <b>SQL</b> and an MVC architecture to facilitate the viewing, manipulation, and analysis of data",
-        "Streamlined the deployment process of complex code with multiple dependencies, using <b>Docker</b> and <b>GitLab</b> CI to optimise the development process and improve productivity"
+        "Utilised **Vue** and **TypeScript** to create an intuitive, user-friendly web application, using robust design patterns and best practices to ensure optimal functionality and user experience",
+        "Designed and developed a responsive, feature-rich web application using **Flutter** and **Dart**, incorporating a range of views and user-friendly interfaces for maximum ease of use",
+        "Employed **WPF** and **C#** to create a high-performance application, using **SQL** and an MVC architecture to facilitate the viewing, manipulation, and analysis of data",
+        "Streamlined the deployment process of complex code with multiple dependencies, using **Docker** and **GitLab** CI to optimise the development process and improve productivity"
       ]
     },
     {
@@ -56,7 +56,7 @@
       "endDate": "2021-08-13",
       "summary": "Researching novel telescope imaging techniques using quantum gases",
       "highlights": [
-        "Developed robust code with <b>Python</b> for fabricating and analysing images from a solar telescope",
+        "Developed robust code with **Python** for fabricating and analysing images from a solar telescope",
         "Performed deep literature review to justify techniques used in the creation of said telescope",
         "Discussed and acted upon desires and needs of telescope engineers, theorists, and observationalists"
       ]
@@ -70,7 +70,7 @@
       "endDate": "2020-10-02",
       "summary": "Developing interactive teaching content for a better online learning experience in the pandemic",
       "highlights": [
-        "Utilised <b>Python</b> to create highly interactive learning resources for Durham physics students",
+        "Utilised **Python** to create highly interactive learning resources for Durham physics students",
         "Worked remotely with lecturers to deliver content tailored to their needs and desires",
         "Organised fellow interns as a group by creating task rotas to encourage teamwork and mitigate work-duplication, establishing efficient development"
       ]
@@ -84,7 +84,7 @@
       "endDate": "2019-09-20",
       "summary": "Designing and testing real-time optimisation for an ion satellite thruster",
       "highlights": [
-        "Programmed and debugged a real-time optimisation algorithm on a microcontroller with <b>C</b>",
+        "Programmed and debugged a real-time optimisation algorithm on a microcontroller with **C**",
         "Provided R&D updates and creative input to problem solving",
         "Worked on commercially sensitive and highly confidential new product developments using advanced software",
         "Liaised directly with customers on work done with radio-frequency electronics"
