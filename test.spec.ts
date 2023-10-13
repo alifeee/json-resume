@@ -1,6 +1,12 @@
 import { describe, expect, test } from "bun:test";
 import resumeSchema from "resume-schema";
-import { dateToDay, dateToMonthName, dateToYear, iconify } from "./build-html";
+import {
+  dateToDay,
+  dateToMonthName,
+  dateToYear,
+  iconify,
+  markdown,
+} from "./build-html";
 
 const cv_path = "cv.json";
 const cv_file = Bun.file(cv_path);
@@ -38,5 +44,13 @@ describe("helpers", () => {
     expect(iconify("blog")).toBe("fas fa-rss");
     expect(iconify("github")).toBe("fab fa-github");
     expect(iconify("unknown")).toBe("fab fa-unknown");
+  });
+
+  test("markdown", () => {
+    expect(markdown("Hello, world!")).toBe("<p>Hello, world!</p>\n");
+    expect(markdown("# Hello, world!")).toBe("<h1>Hello, world!</h1>\n");
+    expect(markdown("Hello, **world**!")).toBe(
+      "<p>Hello, <strong>world</strong>!</p>\n"
+    );
   });
 });

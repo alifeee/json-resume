@@ -2,6 +2,7 @@ import Handlebars from "handlebars";
 import cv from "./cv.json";
 import template from "./theme/template.txt";
 import { readdir, mkdir } from "node:fs/promises";
+import { marked } from "marked";
 
 export function dateToYear(date: string): string {
   return new Date(date).getFullYear().toString();
@@ -38,12 +39,17 @@ export function iconify(network: string): string {
   return `fab fa-${network}`;
 }
 
+export function markdown(text: string): string {
+  return marked(text);
+}
+
 export function compile(template: string, content: object): string {
   const hb = Handlebars.compile(template);
   Handlebars.registerHelper("year", dateToYear);
   Handlebars.registerHelper("month", dateToMonthName);
   Handlebars.registerHelper("day", dateToDay);
   Handlebars.registerHelper("iconify", iconify);
+  Handlebars.registerHelper("markdown", markdown);
 
   return hb(content);
 }
