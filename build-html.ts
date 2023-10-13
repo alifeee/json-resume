@@ -49,6 +49,6 @@ export function compile(template: string, content: object): string {
 
 if (import.meta.main) {
   const html = compile(template, cv);
-  await Bun.write("index.html", html);
-  console.log(`Saved index.html`);
+  await Bun.write("cv.html", html);
+  console.log(`Saved cv.html`);
 }
