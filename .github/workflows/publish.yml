@@ -5,10 +5,8 @@ name: build cv and publish to GitHub release and github pages site
 
 on:
   push:
-    # tags:
-    #   - "*"
-    branches:
-      - bun
+    tags:
+      - "*"
 
 jobs:
   build:
@@ -31,64 +29,53 @@ jobs:
         with:
           name: build
           path: build
-#   publish-release-files:
-#     needs: build
-#     runs-on: ubuntu-latest
-#     permissions:
-#       contents: write
-#     steps:
-#       - name: Download html artifact
-#         uses: actions/download-artifact@v3
-#         with:
-#           name: html cv
-#       - name: Download pdf artifact
-#         uses: actions/download-artifact@v3
-#         with:
-#           name: pdf cv
 
-#       - name: Upload html to release
-#         uses: svenstaro/upload-release-action@v2
-#         with:
-#           repo_token: ${{ secrets.GITHUB_TOKEN }}
-#           file: cv.html
-#           asset_name: cv.html
-#           tag: ${{ github.ref }}
-#           overwrite: true
-#       - name: Upload pdf to release
-#         uses: svenstaro/upload-release-action@v2
-#         with:
-#           repo_token: ${{ secrets.GITHUB_TOKEN }}
-#           file: cv.pdf
-#           asset_name: cv.pdf
-#           tag: ${{ github.ref }}
-#           overwrite: true
+  publish-to-release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+          path: build
 
-#   publish-to-gh-pages-branch:
-#     needs: build
-#     runs-on: ubuntu-latest
-#     permissions:
-#       contents: write
-#     steps:
-#       - name: checkout publish branch
-#         uses: actions/checkout@v3
-#         with:
-#           ref: publish
+      - name: Zip build files
+        run: zip -r build.zip build
 
-#       - name: Download html artifact
-#         uses: actions/download-artifact@v3
-#         with:
-#           name: html cv
-#       - name: Download pdf artifact
-#         uses: actions/download-artifact@v3
-#         with:
-#           name: pdf cv
+      - name: Upload build to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: build.zip
+          asset_name: build.zip
+          tag: ${{ github.ref }}
+          overwrite: true
 
-#       - name: Rename cv.html to index.html
-#         run: mv cv.html index.html
-#       - name: Rename cv.pdf to Alfred-Renn-CV.pdf
-#         run: mv cv.pdf Alfred-Renn-CV.pdf
+  publish-to-gh-pages-branch:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: checkout publish branch
+        uses: actions/checkout@v3
+        with:
+          ref: publish
 
-#       - name: Git auto commit
-#         uses: stefanzweifel/git-auto-commit-action@v4
-#         with:
-#           commit_message: "Update cv to ${{ github.ref_name }}"
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+
+      - name: Rename cv.html to index.html
+        run: mv cv.html index.html
+      - name: Rename cv.pdf to Alfred-Renn-CV.pdf
+        run: mv cv.pdf Alfred-Renn-CV.pdf
+
+      - name: Git auto commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update cv to ${{ github.ref_name }}"
