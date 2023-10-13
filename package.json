@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "bun index.ts",
     "build-html": "bun build index.ts",
-    "build-pdf": "node build-pdf.js"
+    "build-pdf": "node build-pdf.js",
+    "postinstall": "bunx @puppeteer/browsers install chrome@stable --path $HOME/.cache/puppeteer"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
