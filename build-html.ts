@@ -60,10 +60,6 @@ if (import.meta.main) {
   Bun.write("./build/style.css", Bun.file("./theme/style.css"));
   Bun.write("./build/print.css", Bun.file("./theme/print.css"));
   Bun.write("./build/bootstrap.min.css", Bun.file("./theme/bootstrap.min.css"));
-  Bun.write(
-    "./build/fontawesome.min.css",
-    Bun.file("./theme/fontawesome.min.css")
-  );
 
   // compile template
   const html = compile(template, cv);
