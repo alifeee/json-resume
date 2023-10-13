@@ -69,5 +69,7 @@ if (import.meta.main) {
   const html = compile(template, cv);
   await Bun.write("./build/cv.html", html);
 
-  console.log(`Saved ./build/cv.html`);
+  console.log(
+    `You can find your HTML resume at ./build/cv.html. Nice work! 🚀`
+  );
 }
