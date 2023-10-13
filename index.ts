@@ -8,13 +8,26 @@ if (import.meta.main) {
     withHtmlLiveReload({
       port: 3000,
       async fetch(req) {
-        const html = compile(template, cv);
+        if (req.url.endsWith("/")) {
+          const html = compile(template, cv);
 
-        return new Response(html, {
-          headers: {
-            "Content-Type": "text/html",
-          },
-        });
+          return new Response(html, {
+            headers: {
+              "Content-Type": "text/html",
+            },
+          });
+        } else if (req.url.endsWith(".css")) {
+          const path = req.url.split("/").pop();
+          return new Response(Bun.file(`theme/${path}`), {
+            headers: {
+              "Content-Type": "text/css",
+            },
+          });
+        } else {
+          return new Response("Not found", {
+            status: 404,
+          });
+        }
       },
     })
   );
