@@ -14,5 +14,5 @@ if (import.meta.main) {
 
   await browser.close();
 
-  console.log(`You can find your PDF resume at ./build/cv.pdf. Nice work! 🚀`);
+  console.log(`You can find your PDF cv at ./build/cv.pdf. Nice work! 🚀`);
 }
