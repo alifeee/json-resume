@@ -17,6 +17,8 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@cspell/dict-en-gb": "^4.1.23",
+    "cspell": "^7.3.7",
     "handlebars": "^4.7.8",
     "marked": "^9.1.1",
     "puppeteer": "^21.3.8",

@@ -17,3 +17,5 @@ jobs:
         run: bun install
       - name: Run tests
         run: bun test
+      - name: Run spellcheck
+        run: bunx cspell "cv.json"
