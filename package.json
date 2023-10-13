@@ -1,47 +1,27 @@
 {
-  "name": "json-resume",
-  "version": "0.0.0",
-  "description": "Automatic CV generation from JSON format into HTML using JSONResume",
-  "main": "build.js",
+  "name": "cv",
+  "module": "index.ts",
   "type": "module",
-  "scripts": {
-    "test": "node validate.js",
-    "build-html": "node build.js",
-    "build-pdf": "node print.js",
-    "build-all": "npm run build-html && npm run build-pdf",
-    "dev": "nodemon build.js",
-    "postinstall": "patch-package"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alifeee/json-resume.git"
-  },
-  "keywords": [
-    "resume",
-    "cv"
-  ],
-  "author": "Alfred Renn",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alifeee/json-resume/issues"
-  },
-  "homepage": "https://github.com/alifeee/json-resume#readme",
-  "dependencies": {
-    "jsonresume-theme-eloquent": "^4.1.0",
-    "jsonresume-theme-even": "^0.18.1",
-    "jsonresume-theme-kendall": "^0.2.0",
-    "jsonresume-theme-paper": "^0.5.0",
-    "patch-package": "^7.0.0",
-    "puppeteer": "^20.2.0",
-    "resume-schema": "^1.0.0"
-  },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "bun-html-live-reload": "^0.1.2",
+    "bun-types": "latest",
+    "nodemon": "^3.0.1"
   },
-  "nodemonConfig": {
-    "ignoreRoot": [
-      ".git"
-    ],
-    "ext": "js,mjs,json,template,css"
+  "scripts": {
+    "dev": "bun index.ts",
+    "build-html": "bun build index.ts",
+    "build-pdf": "node build-pdf.js",
+    "postinstall": "bunx @puppeteer/browsers install chrome@117.0.5938.149 --path $HOME/.cache/puppeteer"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@cspell/dict-en-gb": "^4.1.23",
+    "cspell": "^7.3.7",
+    "handlebars": "^4.7.8",
+    "marked": "^9.1.1",
+    "puppeteer": "^21.3.8",
+    "resume-schema": "^1.0.0"
   }
 }

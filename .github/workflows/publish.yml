@@ -1,7 +1,7 @@
-# this workflow builds the resume,
+# this workflow builds the cv,
 #  uploads it to the GitHub release that triggered the job
 #  and uploads built files to the publish branch, where they are served by GitHub pages
-name: build resume and publish to GitHub release, github pages site
+name: build cv and publish to GitHub release and github pages site
 
 on:
   push:
@@ -13,61 +13,44 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js 18.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-          cache: "npm"
+      - uses: oven-sh/setup-bun@v1
 
       - name: Install dependencies
-        run: npm ci
+        run: bun install
       - name: Test
-        run: npm test
+        run: bun test
       - name: Build html
-        run: npm run build-html
+        run: bun build-html.ts
       - name: Build pdf
-        run: npm run build-pdf -- --extra-wait
+        run: bun build-pdf.ts
 
-      - name: Save html artifact
+      - name: Save artifact
         uses: actions/upload-artifact@v3
         with:
-          name: html resume
-          path: resume.html
-      - name: Save pdf artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: pdf resume
-          path: resume.pdf
+          name: build
+          path: build
 
-  publish-release-files:
+  publish-to-release:
     needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Download html artifact
+      - name: Download artifact
         uses: actions/download-artifact@v3
         with:
-          name: html resume
-      - name: Download pdf artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: pdf resume
+          name: build
+          path: build
 
-      - name: Upload html to release
+      - name: Zip build files
+        run: zip -r build.zip build
+
+      - name: Upload build to release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: resume.html
-          asset_name: resume.html
-          tag: ${{ github.ref }}
-          overwrite: true
-      - name: Upload pdf to release
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: resume.pdf
-          asset_name: resume.pdf
+          file: build.zip
+          asset_name: build.zip
           tag: ${{ github.ref }}
           overwrite: true
 
@@ -82,21 +65,17 @@ jobs:
         with:
           ref: publish
 
-      - name: Download html artifact
+      - name: Download artifact
         uses: actions/download-artifact@v3
         with:
-          name: html resume
-      - name: Download pdf artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: pdf resume
+          name: build
 
-      - name: Rename resume.html to index.html
-        run: mv resume.html index.html
-      - name: Rename resume.pdf to Alfred-Renn-CV.pdf
-        run: mv resume.pdf Alfred-Renn-CV.pdf
+      - name: Rename cv.html to index.html
+        run: mv cv.html index.html
+      - name: Rename cv.pdf to Alfred-Renn-CV.pdf
+        run: mv cv.pdf Alfred-Renn-CV.pdf
 
       - name: Git auto commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Update resume to ${{ github.ref_name }}"
+          commit_message: "Update cv to ${{ github.ref_name }}"

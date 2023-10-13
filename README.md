@@ -1,8 +1,8 @@
-# JSON Resume
+# CV
 
 My CV in JSON format based on <https://jsonresume.org/>.
 
-![Preview of resume online](images/resume_preview.png)
+![Preview of CV online](images/cv_online.png)
 
 ## Where does it end up?
 
@@ -10,7 +10,7 @@ My CV in JSON format based on <https://jsonresume.org/>.
 1. On the [json-resume registry] (via the [gist])
 1. PDF on the [releases page] or [website]
 
-[`cv.alifeee.co.uk`]: https://alifeee.github.io/json-resume/
+[`cv.alifeee.co.uk`]: https://cv.alifeee.co.uk
 [json-resume registry]: https://registry.jsonresume.org/alifeee
 [gist]: https://gist.github.com/alifeee/97f9ac1642b1c46cf66942c3f079a42f
 [releases page]: https://github.com/alifeee/json-resume/releases
@@ -18,102 +18,62 @@ My CV in JSON format based on <https://jsonresume.org/>.
 
 ## Changing the theme
 
-A list of themes can be found at [https://jsonresume.org/themes/](https://jsonresume.org/themes/). A lot of these are broken. Some themes that look nice, and work well on mobile are:
-
-| Theme | Works locally | Works on registry |
-| ----- | -------------- | ----------------- |
-| [Even](https://github.com/rbardini/jsonresume-theme-even) | ✅ | ❌ |
-| [Kendall](https://github.com/linuxbozo/jsonresume-theme-kendall) | ✅ | ✅ |
-| [Paper](https://github.com/TimDaub/jsonresume-theme-paper) | ✅ | ❌ |
-| [Eloquent](https://github.com/thibaudcolas/jsonresume-theme-eloquent) | ✅ | ❌ |
-[Elegant](https://registry.jsonresume.org/alifeee?theme=elegant) | ❌² | ✅ |
-| [OnePage](https://github.com/ainsleyc/jsonresume-theme-onepage) | ❌² | ✅ |
-
-² - not installed locally as very outdated and full of npm vulnerabilities
-
-### Changing theme remotely
-
-The easiest way to experiment with themes is to update the resume gist (push to main) and visit the [JSON resume registry](https://registry.jsonresume.org/alifeee). The theme can be changed via the `theme` query parameter, e.g.:
+A list of themes can be found at [https://jsonresume.org/themes/](https://jsonresume.org/themes/). You can try them by visiting the [JSON resume registry](https://registry.jsonresume.org/alifeee). The theme can be changed via the `theme` query parameter, e.g.:
 
 ```url
 https://registry.jsonresume.org/alifeee?theme=even
 ```
 
-### Changing theme locally
-
-Alternatively, the theme can be changed locally - see [development](#development).
-
 ## Development
-
-### Prerequisites
-
-| Requirement | Version |
-| ----------- | ------- |
-| Node        | 19.8.1  |
-| npm         | 9.5.1   |
 
 ### Install dependencies
 
 ```bash
-npm install
+bun install
 ```
 
-### Validate JSON
+(in a separate folder) to install Chrome with Puppeteer ([does not install with Bun](https://github.com/oven-sh/bun/issues/4705))
 
 ```bash
-npm run test
+npm install puppeteer
+```
+
+### Test
+
+```bash
+bun test
+```
+
+### Spellcheck
+
+```bash
+bunx cspell "cv.json"
 ```
 
 ### Build HTML
 
 ```bash
-npm run build-html
+bun build-html.ts
 ```
-
-### Build HTML with theme "even"
-
-```bash
-npm install jsonresume-theme-even
-npm run build-html -- --even
-```
-
-### Build HTML and redact personal data
-
-```bash
-npm run build-html -- --redact
-```
-
-### Run with watch
-
-```bash
-npm run dev
-```
-
-Open `resume.html` using the VSCode Live Server extension.
-
-![Context menu for live server in VSCode](images/live%20server.png)
 
 ### Build PDF
 
 ```bash
-npm run build-pdf
+bun build-pdf.ts
 ```
 
-### Build HTML then PDF (all)
+### Develop HTML with hot reload
+
+Hot reload is on any files imported, which are `template.txt` and `cv.json`. The template is a `.txt` as this can be imported into Bun natively, whereas other extensions [require some typescript magic](https://stackoverflow.com/questions/56175900/how-do-you-import-a-text-file-into-typescript) to be imported.
+
+Note that hot reload does not work with Windows files. The repository must exist on a Linux filesystem.
+
+To do this on Windows, open `\\wsl.localhost\Ubuntu\home\<user>` with Explorer and open VSCode via the context menu. WSL can be used via the console window. This way, [hot reload works](https://github.com/oven-sh/bun/issues/5155) in Bun.
+
+Using it like this, sometimes VSCode's file explorer does not refresh properly.
 
 ```bash
-npm run build-all
-```
-
-## Editing the theme
-
-This is not advised, as if you edit too much locally, without releasing your own theme, then your CV will look different on the registry to how it does locally.
-
-However, I edit how the theme looks when printed to a PDF, as this does not have the same problems (I will never get a PDF from the registry). I do this by editing the package in `node_modules` and using patch-package to save the changes.
-
-```bash
-vim node_modules/jsonresume-theme-kendall/print.css
-npx patch-package jsonresume-theme-kendall
+bun --hot index.ts
 ```
 
 ## GitHub Actions
@@ -122,13 +82,16 @@ See [the files themselves](.github/workflows) for more details.
 
 | Action | Description |
 | ------ | ----------- |
-| [`test.yml`] | Runs on pull request and push to `main`. Verifies that the `resume.json` conforms to the [json-resume schema] |
-| [`publish.yml`] | Runs on release (or tag). Builds the HTML and PDF, then pushes to: [releases page]; and `publish` branch (viewable on [my GitHub pages]). |
-| [`update-gist.yml`] | Runs on release (or tag). Updates the [resume gist] if `resume.json` has changed. |
+| [`test.yml`] | Runs on pull request and push to `main`. Verifies that the `resume.json` conforms to the [json-resume schema], [JS tests] pass, and runs [spellcheck] |
+| [`publish.yml`] | Runs on release (or tag). Builds the HTML and PDF, then pushes to: [releases page]; and [`publish` branch] (viewable on [my GitHub pages]). |
+| [`gist.yml`] | Runs on release (or tag). Updates the [resume gist] if `resume.json` has changed. |
 
 [`test.yml`]: .github/workflows/test.yml
 [json-resume schema]: https://jsonresume.org/schema/
 [`publish.yml`]: .github/workflows/publish.yml
 [resume gist]: https://gist.github.com/alifeee/97f9ac1642b1c46cf66942c3f079a42f
 [my GitHub pages]: https://alifeee.github.io/json-resume/
-[`update-gist.yml`]: .github/workflows/update-gist.yml
+[`gist.yml`]: .github/workflows/gist.yml
+[JS tests]: ./test.spec.ts
+[spellcheck]: #spellcheck
+[`publish` branch]: https://github.com/alifeee/json-resume/tree/publish

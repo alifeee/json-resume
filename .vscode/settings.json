@@ -1,29 +1,3 @@
 {
-  "cSpell.words": [
-    "alfredrenn",
-    "alifeee",
-    "Arduino",
-    "Cottingham",
-    "CRODA",
-    "Freeskating",
-    "gspread",
-    "Interrailing",
-    "jsonresume",
-    "lavigne",
-    "Mayock",
-    "O'Keefe",
-    "observationalists",
-    "okeefe",
-    "pona",
-    "Qubits",
-    "Renn",
-    "strib",
-    "Wintle"
-  ],
-  "cSpell.language": "en-GB",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "liveServer.settings.wait": 600,
-  "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-  }
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)"
 }

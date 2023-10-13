@@ -1,22 +1,9 @@
-# this workflow tests the resume format, using the jsonresume schema
-name: test (validate json)
+name: test and validate
 
 on:
   push:
-    paths:
-      - "resume.json"
-      - "validate.js"
-      - "package.json"
-      - "package-lock.json"
-      - ".github/workflows/**"
     branches: ["main"]
   pull_request:
-    paths:
-      - "resume.json"
-      - "validate.js"
-      - "package.json"
-      - "package-lock.json"
-      - ".github/workflows/**"
     branches: ["main"]
 
 jobs:
@@ -25,12 +12,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js 18.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-          cache: "npm"
+      - uses: oven-sh/setup-bun@v1
       - name: Install dependencies
-        run: npm ci
+        run: bun install
       - name: Run tests
-        run: npm test
+        run: bun test
+      - name: Run spellcheck
+        run: bunx cspell "cv.json"

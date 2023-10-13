@@ -5,10 +5,9 @@ name: update GitHub Gist
 on:
   push:
     paths:
-      - "resume.json"
+      - "cv.json"
     tags:
       - "*"
-    branches: ["main"]
 
 jobs:
   update-gist:
@@ -16,6 +15,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - name: Rename cv.json
+        run: mv cv.json resume.json
       - name: Deploy to gist
         uses: exuanbo/actions-deploy-gist@v1
         with:
