@@ -33,6 +33,21 @@
   },
   "work": [
     {
+      "name": "Freelance Software Engineer",
+      "company": "",
+      "position": "",
+      "url": "https://github.com/alifeee",
+      "startDate": "2023-03-03",
+      "summary": "",
+      "highlights": [
+        "gspread",
+        "keyteki",
+        "bus bot",
+        "factorio mod",
+        "hull bus signs"
+      ]
+    },
+    {
       "name": "ByteSnap Design",
       "company": "ByteSnap Design",
       "position": "Software Engineer",
