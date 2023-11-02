@@ -14,6 +14,7 @@
     "build-pdf": "bun build-pdf.ts",
     "build-both": "bun build-both.ts",
     "postinstall": "bunx @puppeteer/browsers install chrome@117.0.5938.149 --path $HOME/.cache/puppeteer",
+    "test": "bun test && bunx cspell 'cv.json'"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
