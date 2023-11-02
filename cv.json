@@ -88,6 +88,13 @@
   ],
   "volunteer": [
     {
+      "organization": "gspread - Simple interface for working with Google Sheets",
+      "position": "Open-source Maintainer",
+      "url": "https://github.com/burnash/gspread/",
+      "startDate": "2023-06-06",
+      "summary": "Maintaining an open-source Python library for interacting with Google Sheets, including adding new features, fixing bugs, and responding to user issues."
+    },
+    {
       "organization": "British Heart Foundation & Barnado's",
       "position": "Electrical Tester",
       "url": "https://www.bhf.org.uk/",
