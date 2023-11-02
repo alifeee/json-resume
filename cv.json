@@ -62,20 +62,6 @@
       ]
     },
     {
-      "name": "Durham University Physics Department",
-      "company": "Durham University Physics Department",
-      "position": "Content Developer",
-      "url": "https://www.durham.ac.uk/departments/academic/physics/",
-      "startDate": "2020-08-31",
-      "endDate": "2020-10-02",
-      "summary": "Developing interactive teaching content for a better online learning experience in the pandemic",
-      "highlights": [
-        "Utilised **Python** to create highly interactive learning resources for Durham physics students",
-        "Worked remotely with lecturers to deliver content tailored to their needs and desires",
-        "Organised fellow interns as a group by creating task rotas to encourage teamwork and mitigate work-duplication, establishing efficient development"
-      ]
-    },
-    {
       "name": "Viper RF",
       "company": "Viper RF",
       "position": "Design Engineer Intern",
@@ -84,27 +70,18 @@
       "endDate": "2019-09-20",
       "summary": "Designing and testing real-time optimisation for an ion satellite thruster",
       "highlights": [
-        "Programmed and debugged a real-time optimisation algorithm on a microcontroller with **C**",
-        "Provided R&D updates and creative input to problem solving",
-        "Worked on commercially sensitive and highly confidential new product developments using advanced software",
-        "Liaised directly with customers on work done with radio-frequency electronics"
+        "Used a microcontroller to minimise power losses for a microwave generator, to be used in space satellites, improving industry knowledge and personal skills",
+        "Programmed and debugged a real-time optimisation algorithm on a microcontroller with **C**"
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "gspread - Simple interface for working with Google Sheets",
-      "position": "Open-source Maintainer",
-      "url": "https://github.com/burnash/gspread/",
-      "startDate": "2023-06-06",
-      "summary": "Maintaining an open-source Python library for interacting with Google Sheets, including adding new features, fixing bugs, and responding to user issues"
-    },
-    {
-      "organization": "British Heart Foundation",
+      "organization": "British Heart Foundation & Barnado's",
       "position": "Electrical Tester",
       "url": "https://www.bhf.org.uk/",
       "startDate": "2023-03-23",
-      "summary": "Testing electrical equipment for the British Heart Foundation home shop",
+      "summary": "Testing electrical equipment for sale in charity shops",
       "highlights": []
     }
   ],
@@ -117,10 +94,7 @@
       "endDate": "2022-07-06",
       "score": "1st (77%)",
       "courses": [
-        "Masters Project (Machine Learning & Quantum Optics)",
-        "Atoms, Lasers and Qubits",
-        "Advanced Theoretical Physics",
-        "Advanced Astrophysics"
+        "Masters Project: Using Machine Learning to Optimise Quantum Optics Experiments"
       ]
     },
     {
@@ -134,8 +108,7 @@
         "A* Physics",
         "A* Mathematics",
         "A* Further Mathematics",
-        "(GCSE) A* Mathematics",
-        "(GCSE) A English",
+        "(GCSE) A* Mathematics, A English",
         "(GCSE) + 5A*, 3A, 2 Dist*"
       ]
     }
@@ -168,8 +141,7 @@
         "Pull requests",
         "Git issues",
         "Open source maintainer",
-        "GitHub Actions",
-        "Release management"
+        "GitHub Actions"
       ]
     },
     {
@@ -192,17 +164,8 @@
       ]
     }
   ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
+  "languages": [],
   "interests": [
-    {
-      "name": "Board games",
-      "keywords": ["Founding President of Board Gaming Society"]
-    },
     {
       "name": "Electronics",
       "keywords": [
@@ -213,14 +176,6 @@
     {
       "name": "Open-source",
       "keywords": ["Contributing to open-source projects"]
-    },
-    {
-      "name": "Wheeled locomotion",
-      "keywords": ["Cycling", "Freeskating"]
-    },
-    {
-      "name": "toki pona (constructed language)",
-      "keywords": ["Zine printing", "Social media management"]
     }
   ],
   "references": [
@@ -250,63 +205,7 @@
       "url": "mailto:graemew@bytesnap.co.uk"
     }
   ],
-  "projects": [
-    {
-      "name": "Custom racing wheel",
-      "description": "Used Arduino to create a steering wheel for driving games, improving practical knowledge of electronics and coding skills, and evolving a robust toolset for microcontroller development",
-      "highlights": [],
-      "keywords": ["Arduino", "Electronics", "C", "DIY"],
-      "startDate": "2017",
-      "endDate": "2017",
-      "roles": ["Creator"],
-      "entity": "Home",
-      "type": "Hardware"
-    },
-    {
-      "name": "Real-time power optimisation for a satellite thruster",
-      "description": "Used a microcontroller to minimise power losses for a microwave generator, to be used in space satellites, improving industry knowledge and personal skills",
-      "highlights": [],
-      "keywords": ["C", "Electronics"],
-      "startDate": "2019-08-12",
-      "endDate": "2019-09-20",
-      "roles": ["Creator", "Tester"],
-      "entity": "Viper RF",
-      "type": "Hardware"
-    },
-    {
-      "name": "Personal website",
-      "description": "Consistently updating my personal website with physics simulations, games, and a collation of many other pages and information",
-      "highlights": [],
-      "keywords": ["Web Development", "HTML", "CSS", "JavaScript"],
-      "startDate": "2020-04-01",
-      "url": "https://www.alifeee.co.uk",
-      "roles": ["Creator", "Maintainer"],
-      "entity": "Home",
-      "type": "Web Development"
-    },
-    {
-      "name": "Quantum mechanics simulation",
-      "description": "Simulated a finite square well with Python to create a learning resource for physics students, requiring data manipulation and creative problem solving to get a responsive application",
-      "highlights": [],
-      "keywords": ["Python", "Physics", "Teaching"],
-      "startDate": "2020-08-31",
-      "endDate": "2020-10-02",
-      "roles": ["Creator", "Tester"],
-      "entity": "Durham University",
-      "type": "Software"
-    },
-    {
-      "name": "Machine learning for optimising laser cooling experiments",
-      "description": "Used machine learning to optimise the cooling of atoms in a laser trap, culminating in a 33-page scientific report",
-      "highlights": [],
-      "keywords": ["Physics", "Atomic physics", "Machine Learning"],
-      "startDate": "2021-08-01",
-      "endDate": "2022-04-19",
-      "roles": ["Student", "Researcher"],
-      "entity": "Durham University",
-      "type": "Research"
-    }
-  ],
+  "projects": [],
   "meta": {
     "theme": "kendall",
     "url": "https://cv.alifeee.co.uk"
