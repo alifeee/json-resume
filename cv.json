@@ -55,10 +55,10 @@
       "endDate": "2023-03-03",
       "summary": "",
       "highlights": [
-        "Utilised **Vue** and **TypeScript** to create an intuitive, user-friendly web application, using robust design patterns and best practices to ensure optimal functionality and user experience",
-        "Designed and developed a responsive, feature-rich web application using **Flutter** and **Dart**, incorporating a range of views and user-friendly interfaces for maximum ease of use",
-        "Employed **WPF** and **C#** to create a high-performance application, using **SQL** and an MVC architecture to facilitate the viewing, manipulation, and analysis of data",
-        "Streamlined the deployment process of complex code with multiple dependencies, using **Docker** and **GitLab** CI to optimise the development process and improve productivity"
+        "Utilised **Vue** and **TypeScript** to create an intuitive, user-friendly web application, using robust design patterns and best practices to ensure optimal functionality and user experience.",
+        "Designed and developed a responsive, feature-rich web application using **Flutter** and **Dart**, incorporating a range of views and user-friendly interfaces for maximum ease of use.",
+        "Employed **WPF** and **C#** to create a high-performance application, using **SQL** and an MVC architecture to facilitate the viewing, manipulation, and analysis of data.",
+        "Streamlined the deployment process of complex code with multiple dependencies, using **Docker** and **GitLab** CI to optimise the development process and improve productivity."
       ]
     },
     {
@@ -70,9 +70,9 @@
       "endDate": "2021-08-13",
       "summary": "Researching novel telescope imaging techniques using quantum gases",
       "highlights": [
-        "Developed robust code with **Python** for fabricating and analysing images from a solar telescope",
-        "Performed deep literature review to justify techniques used in the creation of said telescope",
-        "Discussed and acted upon desires and needs of telescope engineers, theorists, and observationalists"
+        "Developed robust code with **Python** for fabricating and analysing images from a solar telescope.",
+        "Performed deep literature review to justify techniques used in the creation of said telescope.",
+        "Discussed and acted upon desires and needs of telescope engineers, theorists, and observationalists."
       ]
     },
     {
@@ -82,7 +82,7 @@
       "url": "https://www.viper-rf.com/",
       "startDate": "2019-08-12",
       "endDate": "2019-09-20",
-      "summary": "Programmed and debugged a real-time optimisation algorithm on a microcontroller with **C**. This was used to minimise power losses for a microwave generator, to be used in an ion thruster for space satellites, improving both industry knowledge and personal skills",
+      "summary": "Programmed and debugged a real-time optimisation algorithm on a microcontroller with **C**. This was used to minimise power losses for a microwave generator, to be used in an ion thruster for space satellites, improving both industry knowledge and personal skills.",
       "highlights": []
     }
   ],
@@ -92,7 +92,7 @@
       "position": "Electrical Tester",
       "url": "https://www.bhf.org.uk/",
       "startDate": "2023-03-23",
-      "summary": "Testing electrical equipment for sale in charity shops",
+      "summary": "Testing electrical equipment for sale in charity shops.",
       "highlights": []
     }
   ],
