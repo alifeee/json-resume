@@ -1,6 +1,9 @@
 import puppeteer from "puppeteer";
+import { buildHTML } from "./build-html";
 
 export async function buildPDF() {
+  await buildHTML();
+  
   const cv_path = new URL("./build/cv.html", import.meta.url).href;
 
   const browser = await puppeteer.launch({ headless: "new" });
