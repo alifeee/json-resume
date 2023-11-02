@@ -40,11 +40,10 @@
       "startDate": "2023-03-03",
       "summary": "",
       "highlights": [
-        "gspread",
-        "keyteki",
-        "bus bot",
-        "factorio mod",
-        "hull bus signs"
+        "Co-maintaining [**gspread**](https://github.com/burnash/gspread), an open-source **Python** API for Google Sheets with over 8 million downloads per month, demanding a high level of future-planning and project management.",
+        "Developed new code and tests in **JavaScript** for a new expansion for [keyteki](https://github.com/keyteki/keyteki), an online card game, working in a fast-paced and highly collaborative environment ahead of the new expansion's release.",
+        "Developed a mod for the video game Factorio in **Lua**, involving a low-level partner-plugin for the voice chat client Mumble, written in **C**",
+        "Interfaced with an electronic dot-matrix display discarded from a bus station, using **C**, requiring an involved knowledge of electronics and communication protocols."
       ]
     },
     {
