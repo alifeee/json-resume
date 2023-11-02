@@ -38,28 +38,22 @@ bun install
 npm install puppeteer
 ```
 
-### Test
+### Test & spellcheck
 
 ```bash
-bun test
-```
-
-### Spellcheck
-
-```bash
-bunx cspell "cv.json"
+bun run test
 ```
 
 ### Build HTML
 
 ```bash
-bun build-html.ts
+bun run build-html
 ```
 
 ### Build PDF
 
 ```bash
-bun build-pdf.ts
+bun run build-pdf
 ```
 
 ### Develop HTML with hot reload
@@ -72,13 +66,13 @@ To do this on Windows, open `\\wsl.localhost\Ubuntu\home\<user>` with Explorer a
 
 Using it like this, sometimes VSCode's file explorer does not refresh properly.
 
-#### Develop HTML with hot reload
+#### HTML
 
 ```bash
 bun run dev
 ```
 
-#### Develop PDF with hot reload
+#### PDF
 
 Note: you still must manually refresh the opened PDF after it rebuilds. This is notably less hot than live-developing the HTML, but still quite fast.
 
