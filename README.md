@@ -18,6 +18,8 @@ My CV in JSON format based on <https://jsonresume.org/>.
 
 ## Changing the theme
 
+The current theme is held within the [`./theme`](./theme/) folder. You can also use online themes.
+
 A list of themes can be found at [https://jsonresume.org/themes/](https://jsonresume.org/themes/). You can try them by visiting the [JSON resume registry](https://registry.jsonresume.org/alifeee). The theme can be changed via the `theme` query parameter, e.g.:
 
 ```url
