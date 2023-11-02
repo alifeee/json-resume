@@ -11,6 +11,7 @@
     "dev": "bun index.ts",
     "build-html": "bun build index.ts",
     "build-pdf": "node build-pdf.js",
+    "build-both": "node build-both.js",
     "postinstall": "bunx @puppeteer/browsers install chrome@117.0.5938.149 --path $HOME/.cache/puppeteer"
   },
   "peerDependencies": {

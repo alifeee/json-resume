@@ -54,7 +54,7 @@ export function compile(template: string, content: object): string {
   return hb(content);
 }
 
-if (import.meta.main) {
+export async function buildHTML() {
   // if /build does not exist, create it
   try {
     await readdir("./build");
@@ -72,4 +72,8 @@ if (import.meta.main) {
   await Bun.write("./build/cv.html", html);
 
   console.log(`You can find your HTML cv at ./build/cv.html. Nice work! 🚀`);
+}
+
+if (import.meta.main) {
+  await buildHTML();
 }
