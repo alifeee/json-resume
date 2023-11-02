@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "bun --hot index.ts",
     "dev-pdf": "bun --hot build-both.ts",
-    "build-html": "bun build index.ts",
+    "build-html": "bun build-html.ts",
     "build-pdf": "bun build-pdf.ts",
     "build-both": "bun build-both.ts",
     "postinstall": "bunx @puppeteer/browsers install chrome@117.0.5938.149 --path $HOME/.cache/puppeteer",
