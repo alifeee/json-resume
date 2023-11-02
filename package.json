@@ -8,7 +8,8 @@
     "nodemon": "^3.0.1"
   },
   "scripts": {
-    "dev": "bun index.ts",
+    "dev": "bun --hot index.ts",
+    "dev-pdf": "bun --hot build-both.ts",
     "build-html": "bun build index.ts",
     "build-pdf": "node build-pdf.js",
     "build-both": "node build-both.js",
