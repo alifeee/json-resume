@@ -2,9 +2,6 @@ name: test and validate
 
 on:
   push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
 
 jobs:
   test:
