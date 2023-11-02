@@ -83,11 +83,8 @@
       "url": "https://www.viper-rf.com/",
       "startDate": "2019-08-12",
       "endDate": "2019-09-20",
-      "summary": "Designing and testing real-time optimisation for an ion satellite thruster",
-      "highlights": [
-        "Used a microcontroller to minimise power losses for a microwave generator, to be used in space satellites, improving industry knowledge and personal skills",
-        "Programmed and debugged a real-time optimisation algorithm on a microcontroller with **C**"
-      ]
+      "summary": "Programmed and debugged a real-time optimisation algorithm on a microcontroller with **C**. This was used to minimise power losses for a microwave generator, to be used in an ion thruster for space satellites, improving both industry knowledge and personal skills",
+      "highlights": []
     }
   ],
   "volunteer": [
