@@ -18,11 +18,11 @@ jobs:
       - name: Install dependencies
         run: bun install
       - name: Test
-        run: bun test
+        run: bun run test
       - name: Build html
-        run: bun build-html.ts
+        run: bun run build-html
       - name: Build pdf
-        run: bun build-pdf.ts
+        run: bun run build-pdf
 
       - name: Save artifact
         uses: actions/upload-artifact@v3

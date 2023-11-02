@@ -1,6 +1,9 @@
 import puppeteer from "puppeteer";
+import { buildHTML } from "./build-html";
 
-if (import.meta.main) {
+export async function buildPDF() {
+  await buildHTML();
+  
   const cv_path = new URL("./build/cv.html", import.meta.url).href;
 
   const browser = await puppeteer.launch({ headless: "new" });
@@ -15,4 +18,8 @@ if (import.meta.main) {
   await browser.close();
 
   console.log(`You can find your PDF cv at ./build/cv.pdf. Nice work! 🚀`);
+}
+
+if (import.meta.main) {
+  await buildPDF();
 }

@@ -38,7 +38,7 @@ blockquote,
 .skills .col-sm-offset-1,
 .interests .col-sm-offset-1 {
   margin-top: -10px;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 
 #education {
@@ -53,7 +53,7 @@ blockquote,
 #awards .description,
 #education .description,
 .job .details {
-  border: 1px solid #eee;
+  /* border: 1px solid #eee; */
 }
 .publication,
 .publication .panel-heading,
@@ -72,8 +72,8 @@ blockquote,
 }
 
 .list-group-item {
-  border: none;
-  margin: 0;
+  /* border: none; */
+  /* margin: 0; */
   padding: 5px 15px;
 }
 .list-group-item:after {
