@@ -24,11 +24,16 @@ jobs:
       - name: Build pdf
         run: bun run build-pdf
 
-      - name: Save artifact
+      - name: Save build folder as artifact
         uses: actions/upload-artifact@v3
         with:
           name: build
           path: build
+      - name: Save pdf as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: cv.pdf
+          path: build/cv.pdf
 
   publish-to-release:
     needs: build
@@ -51,6 +56,14 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: build.zip
           asset_name: build.zip
+          tag: ${{ github.ref }}
+          overwrite: true
+      - name: Upload pdf to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: build/cv.pdf
+          asset_name: cv.pdf
           tag: ${{ github.ref }}
           overwrite: true
 
