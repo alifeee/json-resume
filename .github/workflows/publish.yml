@@ -76,17 +76,21 @@ jobs:
       - name: checkout publish branch
         uses: actions/checkout@v3
         with:
-          ref: publish
+          ref: new-publish
 
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
           name: build
+          path: build
+
+      - name: Copy build files to /docs
+        run: cp -r build/* docs/
 
       - name: Rename cv.html to index.html
-        run: mv cv.html index.html
+        run: mv docs/cv.html docs/index.html
       - name: Rename cv.pdf to Alfred-Renn-CV.pdf
-        run: mv cv.pdf Alfred-Renn-CV.pdf
+        run: mv docs/cv.pdf docs/Alfred-Renn-CV.pdf
 
       - name: Git auto commit
         uses: stefanzweifel/git-auto-commit-action@v4
