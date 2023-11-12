@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>alifeee</title>
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- open graph meta -->
+    <meta property="og:title" content="alifeee's website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alifeee.co.uk" />
+    <meta property="og:image" content="https://alifeee.co.uk/og-image.jpg" />
+    <meta
+      property="og:description"
+      content="My personal website. What horrors could lie within?"
+    />
+    <meta property="og:locale" content="en_GB" />
+
+    <!-- favicon -->
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- stylesheets & fonts -->
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <a href="/">alifeee - web portfolio</a>
+      </h1>
+    </header>
+
+    <main>
+      <h1>Websites and web apps I have created</h1>
+      <ul class="pages">
+        <li class="page">
+          <a href="https://blog.alifeee.co.uk/"></a>
+          <div class="header">
+            <h2 class="shade">Personal blog</h2>
+            <p>
+              Static site with interactive comments and automated components,
+              including filtering tags, reading time, and suggested posts.
+            </p>
+            <ul class="tools shade">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+            </ul>
+          </div>
+          <div class="image">
+            <img alt="thumbnail for blog" src="./images/blog.png" />
+          </div>
+        </li>
+        <li class="page">
+          <div class="header">
+            <h2 class="shade">Web application for RGB LED lighting</h2>
+            <p>
+              Fast Vue web application to control LED lights, with several
+              pages, interactive, touch-first design and designed with UX in
+              mind.
+            </p>
+            <ul class="tools shade">
+              <li>Vue</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+            </ul>
+          </div>
+          <div class="image">
+            <span>[professional project]</span>
+          </div>
+        </li>
+        <li class="page">
+          <a href="https://cv.alifeee.co.uk/"></a>
+          <div class="header">
+            <h2 class="shade">CV</h2>
+            <p>
+              My CV on the web, with automatic deployment, version control, and
+              responsive design
+            </p>
+            <ul class="tools shade">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+            </ul>
+          </div>
+          <div class="image">
+            <img alt="thumbnail for cv" src="./images/cv.png" />
+          </div>
+        </li>
+        <li class="page">
+          <a href="https://alifeee.co.uk/physsoc/"></a>
+          <div class="header">
+            <h2 class="shade">Physics Society Webpage</h2>
+            <p>
+              Responsive and easy to edit website for the Durham University
+              Physics Society
+            </p>
+            <ul class="tools shade">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+            </ul>
+          </div>
+          <div class="image">
+            <img
+              alt="thumbnail for physsoc"
+              src="./images/durham-physics-society.png"
+            />
+          </div>
+        </li>
+        <li class="page">
+          <div class="header">
+            <h2 class="shade">Holiday visualiser web app</h2>
+            <p>
+              Web app to visualise when employees had holidays booked, showing
+              list views, calendar views, and an organisation chart view.
+              Quickly updatable and reconfigurable via configuration files.
+            </p>
+            <ul class="tools shade">
+              <li>Flutter</li>
+            </ul>
+          </div>
+          <div class="image">
+            <span>[professional project]</span>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <footer></footer>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --background: #222;
+        --primary: #63a;
+        --text: #fff;
+        --link: #5bf;
+        --link-visited: #ccf;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        background: #222;
+      }
+      main {
+        max-width: 40rem;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      html {
+        overflow-y: scroll;
+      }
+
+      a:link {
+        color: var(--link);
+      }
+      a:visited {
+        color: var(--link-visited);
+      }
+
+      header {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: var(--primary);
+      }
+
+      header h1 {
+        margin: 0;
+      }
+      h1 {
+        text-align: center;
+      }
+      h1 > a:link {
+        color: white;
+        text-decoration: none;
+      }
+      h1 > a:visited {
+        color: white;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Josefin Sans", sans-serif;
+      }
+
+      footer {
+        font-size: 0.8em;
+        padding: 1rem;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .pages {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+      }
+      .page {
+        position: relative;
+        flex: 0 0 25rem;
+        background-color: rgb(47, 27, 72);
+        outline: 1px solid black;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 0.5rem black;
+        font-family: "Josefin Sans", sans-serif;
+        display: grid;
+        grid-template-rows: 10fr 15fr;
+        overflow: hidden;
+      }
+      .page > a {
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      .page .image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .page .image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: filter 0.1s ease;
+        filter: brightness(0.5);
+        object-fit: cover;
+        object-position: 50% 0%;
+      }
+      .page .image span {
+        display: block;
+        color: grey;
+      }
+      .page:hover img {
+        filter: brightness(0.25);
+      }
+      .page:hover {
+        transform: scale(1.05);
+      }
+
+      .page > .header {
+        text-align: center;
+        padding: 0.5rem 1rem;
+      }
+      .page > .header > h2 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .page > .header > p {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      .tools {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      .tools > li:not(:last-child)::after {
+        content: "•";
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+    </style>
+  </body>
+</html>
