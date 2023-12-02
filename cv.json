@@ -95,7 +95,7 @@
       "summary": "Maintaining an open-source Python library for interacting with Google Sheets, including adding new features, fixing bugs, and responding to user issues."
     },
     {
-      "organization": "British Heart Foundation & Barnado's",
+      "organization": "British Heart Foundation",
       "position": "Electrical Tester",
       "url": "https://www.bhf.org.uk/",
       "startDate": "2023-03-23",
@@ -145,12 +145,21 @@
     {
       "name": "Data Analysis",
       "level": "",
-      "keywords": ["Python", "Statistics", "Jupyter"]
+      "keywords": [
+        "Python",
+        "Statistics",
+        "Jupyter"
+      ]
     },
     {
       "name": "Web Development",
       "level": "",
-      "keywords": ["HTML", "CSS", "JavaScript", "Vue"]
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Vue"
+      ]
     },
     {
       "name": "Git/Project Management",
@@ -193,7 +202,9 @@
     },
     {
       "name": "Open-source",
-      "keywords": ["Contributing to open-source projects"]
+      "keywords": [
+        "Contributing to open-source projects"
+      ]
     }
   ],
   "references": [
