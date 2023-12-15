@@ -6,11 +6,11 @@ My CV in JSON format based on <https://jsonresume.org/>.
 
 ## Where does it end up?
 
-1. On [`cv.alifeee.co.uk`]
+1. On [`cv.alfierenn.dev`]
 1. On the [json-resume registry] (via the [gist])
 1. PDF on the [releases page] or [website]
 
-[`cv.alifeee.co.uk`]: https://cv.alifeee.co.uk
+[`cv.alfierenn.dev`]: https://cv.alfierenn.dev
 [json-resume registry]: https://registry.jsonresume.org/alifeee
 [gist]: https://gist.github.com/alifeee/97f9ac1642b1c46cf66942c3f079a42f
 [releases page]: https://github.com/alifeee/json-resume/releases

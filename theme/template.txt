@@ -9,7 +9,7 @@
     <meta property="og:title" content="{{ basics.name }}" />
     <meta property="og:type" content="website" />
     <meta property="og:site" content="{{ basics.name }}'s CV" />
-    <meta property="og:url" content="https://cv.alifeee.co.uk" />
+    <meta property="og:url" content="https://cv.alfierenn.dev" />
     <meta property="og:image" content="{{ basics.image }}" />
     <meta property="og:description" content="{{ basics.name }}'s CV on the web" />
     <meta property="og:locale" content="en_GB" />
