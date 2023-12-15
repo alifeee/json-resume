@@ -44,14 +44,16 @@ jobs:
           mv build/cv.html build/index.html
           mv build/cv.pdf build/Alfie-Renn-CV.pdf
 
-      - name: Copy build files
+      - name: Create _site directory
+        run: mkdir _site
+      - name: Copy build files to _site
         run: cp -r build/* _site/
       - name: Copy static files
         run: cp -r public/* _site/
-      
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v2
-        
+
       - name: Save build folder as artifact
         uses: actions/upload-artifact@v3
         with:
