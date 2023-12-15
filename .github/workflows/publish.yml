@@ -90,6 +90,9 @@ jobs:
       - name: Copy build files to /docs
         run: cp -r build/* docs/
 
+      - name: Copy static files to /docs
+        run: cp -r public/* docs/
+
       - name: Rename cv.html to index.html
         run: mv docs/cv.html docs/index.html
       - name: Rename cv.pdf to Alfie-Renn-CV.pdf
