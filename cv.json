@@ -2,7 +2,7 @@
   "basics": {
     "name": "Alfred Renn",
     "label": "Software Engineer",
-    "image": "https://cv.alifeee.co.uk/profile-picture.png",
+    "image": "https://cv.alfierenn.dev/profile-picture.png",
     "email": "alfredirenn@gmail.com",
     "phone": "",
     "url": "https://alifeee.co.uk",
@@ -237,6 +237,6 @@
   "projects": [],
   "meta": {
     "theme": "kendall",
-    "url": "https://cv.alifeee.co.uk"
+    "url": "https://cv.alfierenn.dev"
   }
 }
