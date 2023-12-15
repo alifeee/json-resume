@@ -9,7 +9,7 @@
     <meta property="og:title" content="Alfred Renn" />
     <meta property="og:type" content="website" />
     <meta property="og:site" content="Alfred Renn's CV" />
-    <meta property="og:url" content="https://cv.alifeee.co.uk" />
+    <meta property="og:url" content="https://cv.alfierenn.dev" />
     <meta property="og:image" content="{{ basics.image }}" />
     <meta property="og:description" content="Alfred Renn's CV on the web" />
     <meta property="og:locale" content="en_GB" />
