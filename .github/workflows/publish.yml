@@ -89,8 +89,8 @@ jobs:
 
       - name: Rename cv.html to index.html
         run: mv docs/cv.html docs/index.html
-      - name: Rename cv.pdf to Alfred-Renn-CV.pdf
-        run: mv docs/cv.pdf docs/Alfred-Renn-CV.pdf
+      - name: Rename cv.pdf to Alfie-Renn-CV.pdf
+        run: mv docs/cv.pdf docs/Alfie-Renn-CV.pdf
 
       - name: Git auto commit
         uses: stefanzweifel/git-auto-commit-action@v4

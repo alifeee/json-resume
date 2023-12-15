@@ -14,7 +14,7 @@ My CV in JSON format based on <https://jsonresume.org/>.
 [json-resume registry]: https://registry.jsonresume.org/alifeee
 [gist]: https://gist.github.com/alifeee/97f9ac1642b1c46cf66942c3f079a42f
 [releases page]: https://github.com/alifeee/json-resume/releases
-[website]: https://alifeee.github.io/json-resume/Alfred-Renn-CV.pdf
+[website]: https://alifeee.github.io/json-resume/Alfie-Renn-CV.pdf
 
 ## Changing the theme
 
