@@ -84,6 +84,9 @@ jobs:
           name: build
           path: build
 
+      - name: Remove old files from /docs
+        run: rm -rf docs/*
+
       - name: Copy build files to /docs
         run: cp -r build/* docs/
 
