@@ -26,6 +26,7 @@ let icons: { [key: string]: string } = {
   stackoverflow: "fab fa-stack-overflow",
   "stack-overflow": "fab fa-stack-overflow",
   blog: "fas fa-rss",
+  website: "fas fa-globe",
   rss: "fas fa-rss",
   gitlab: "fab fa-gitlab",
   github: "fab fa-github",

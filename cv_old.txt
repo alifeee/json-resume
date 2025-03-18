@@ -1,0 +1,5 @@
+stuff removed from cv.json but that I don't want to rewrite in future
+
+highlights
+"Developed new code and tests in **JavaScript** for a new expansion for [keyteki](https://github.com/keyteki/keyteki), an online card game, working in a fast-paced and highly collaborative environment ahead of the new expansion's release.",
+

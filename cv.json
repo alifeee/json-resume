@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Alfie Renn",
-    "label": "Software Engineer",
+    "label": "Software Engineer & Web Designer",
     "image": "https://cv.alfierenn.dev/profile-picture.png",
     "email": "alfie@alfierenn.dev",
     "phone": "",
-    "url": "https://alifeee.co.uk",
+    "url": "https://alfierenn.dev/",
     "summary": "Hi! I'm Alfie: physics graduate, toki pona speaker, and software engineer. I love to make beautiful things with code (mainly using HTML/CSS/JavaScript and Python), including websites, apps, and graphs. With all my work I create good quality, robust, and well-tested code, as well as powerful automation and well-organised git repositories, empowering collaboration. Do check out my website and GitHub!",
     "location": {
       "address": "",
@@ -18,6 +18,10 @@
       {
         "network": "Blog",
         "url": "https://blog.alifeee.co.uk"
+      },
+      {
+        "network": "Website",
+        "url": "https://alifeee.co.uk"
       },
       {
         "network": "LinkedIn",
@@ -33,7 +37,7 @@
   },
   "work": [
     {
-      "name": "Freelance Software Engineer",
+      "name": "Freelance Software Engineer / Web Designer",
       "company": "",
       "position": "",
       "url": "https://alfierenn.dev/",
@@ -41,7 +45,9 @@
       "summary": "",
       "highlights": [
         "Co-maintaining [**gspread**](https://github.com/burnash/gspread), an open-source **Python** API for Google Sheets with over 8 million downloads per month, demanding a high level of future-planning and project management.",
-        "Developed new code and tests in **JavaScript** for a new expansion for [keyteki](https://github.com/keyteki/keyteki), an online card game, working in a fast-paced and highly collaborative environment ahead of the new expansion's release.",
+        "Management and upkeep of **WordPress** and **Shopify** **eCommerce sites** for an international brand.",
+        "Maintaining an extensive database of tens of thousands of vehicle paint colours using **CSV**s and **SQL**, including keeping it up to date, adapting the database format to the needs of the users, and ensuring a reproducible **data pipeline**.",
+        "Development and upkeep of a bespoke **PHP** plugin enabling dynamic product content for **WordPress**, as well as programmatic integrations with common WordPress plugins like **WooCommerce** and **Yoast SEO**.",
         "Developed a mod for the video game Factorio in **Lua**, involving a low-level partner-plugin for the voice chat client Mumble, written in **C**. Released on Windows and Linux.",
         "Interfaced with an electronic dot-matrix display discarded from a bus station, using **C**, requiring an involved knowledge of electronics and low-level communication protocols."
       ]
