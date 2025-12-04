@@ -82,6 +82,27 @@ Note: you still must manually refresh the opened PDF after it rebuilds. This is 
 bun run dev-pdf
 ```
 
+#### Run full build
+
+```bash
+./build.sh
+```
+
+## nginx config
+
+```nginx
+server {
+  listen 80;
+  server_name example.com;
+
+  location / {
+    root /var/www/cv/_site/;
+    try_files $uri $uri/ =404;
+    add_header Access-Control-Allow-Origin *;
+  }
+}
+```
+
 ## GitHub Actions
 
 See [the files themselves](.github/workflows) for more details.
