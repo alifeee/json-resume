@@ -1,3 +1,5 @@
+> [!CAUTION]
+> MOVED! see <https://git.alifeee.net/json-resume/about/>
 # CV
 
 My CV in JSON format based on <https://jsonresume.org/>.
